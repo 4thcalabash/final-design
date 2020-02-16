@@ -1,0 +1,1985 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='A:\final-design\mat' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1581607344741'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='198'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi.util' version='3.5.0.v20180219-1511'>
+      <properties size='2'>
+        <property name='artifact.size' value='73316'/>
+        <property name='download.size' value='73316'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.osgi.util_3.5.0.v20180219-1511.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.osgi.util_3.5.0.v20180219-1511.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.services' version='1.3.100.v20180403-0945'>
+      <properties size='2'>
+        <property name='artifact.size' value='25763'/>
+        <property name='download.size' value='25763'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.services_1.3.100.v20180403-0945.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.services_1.3.100.v20180403-0945.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.server' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='614553'/>
+        <property name='download.size' value='614553'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.server_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.server_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.core' version='0.12.200.v20180417-2309'>
+      <properties size='2'>
+        <property name='artifact.size' value='217667'/>
+        <property name='download.size' value='217667'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.css.core_0.12.200.v20180417-2309.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.css.core_0.12.200.v20180417-2309.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.bindings' version='0.12.100.v20180509-1220'>
+      <properties size='2'>
+        <property name='artifact.size' value='46006'/>
+        <property name='download.size' value='46006'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.bindings_0.12.100.v20180509-1220.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.bindings_0.12.100.v20180509-1220.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.identity' version='3.9.0.v20180426-1936'>
+      <properties size='2'>
+        <property name='artifact.size' value='64806'/>
+        <property name='download.size' value='64806'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.identity_3.9.0.v20180426-1936.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.identity_3.9.0.v20180426-1936.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.gogo.runtime' version='1.0.6.v20170914-1324'>
+      <properties size='2'>
+        <property name='artifact.size' value='214089'/>
+        <property name='download.size' value='214089'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.felix.gogo.runtime_1.0.6.v20170914-1324.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.felix.gogo.runtime_1.0.6.v20170914-1324.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface' version='3.14.0.v20180423-0714'>
+      <properties size='2'>
+        <property name='artifact.size' value='1100815'/>
+        <property name='download.size' value='1100815'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jface_3.14.0.v20180423-0714.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jface_3.14.0.v20180423-0714.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.jobs' version='3.10.0.v20180427-1454'>
+      <properties size='2'>
+        <property name='artifact.size' value='107636'/>
+        <property name='download.size' value='107636'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.jobs_3.10.0.v20180427-1454.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.jobs_3.10.0.v20180427-1454.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.forms' version='3.7.200.v20180512-1133'>
+      <properties size='2'>
+        <property name='artifact.size' value='326545'/>
+        <property name='download.size' value='326545'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.forms_3.7.200.v20180512-1133.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.forms_3.7.200.v20180512-1133.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding' version='1.6.200.v20180509-1517'>
+      <properties size='2'>
+        <property name='artifact.size' value='175944'/>
+        <property name='download.size' value='175944'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.databinding_1.6.200.v20180509-1517.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.databinding_1.6.200.v20180509-1517.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.emf.xpath' version='0.2.100.v20180403-0944'>
+      <properties size='2'>
+        <property name='artifact.size' value='50026'/>
+        <property name='download.size' value='50026'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.emf.xpath_0.2.100.v20180403-0944.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.emf.xpath_0.2.100.v20180403-0944.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.net' version='1.3.200.v20180515-0858'>
+      <properties size='2'>
+        <property name='artifact.size' value='74311'/>
+        <property name='download.size' value='74311'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.net_1.3.200.v20180515-0858.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.net_1.3.200.v20180515-0858.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.extras.feature' version='1.4.0.v20180515-1348'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.equinox.p2.extras.feature_1.4.0.v20180515-1348/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.equinox.p2.extras.feature_1.4.0.v20180515-1348'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.i18n' version='1.9.1.v20180227-1645'>
+      <properties size='2'>
+        <property name='artifact.size' value='24036'/>
+        <property name='download.size' value='24036'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.batik.i18n_1.9.1.v20180227-1645.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.batik.i18n_1.9.1.v20180227-1645.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.bidi' version='1.1.100.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='49725'/>
+        <property name='download.size' value='49725'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.bidi_1.1.100.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.bidi_1.1.100.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.help' version='2.2.200.v20180611-0500'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.help_2.2.200.v20180611-0500/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.help_2.2.200.v20180611-0500'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.birt.chart.device.swt' version='4.7.0.v201706222054'>
+      <properties size='2'>
+        <property name='artifact.size' value='63361'/>
+        <property name='download.size' value='63361'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.birt.chart.device.swt_4.7.0.v201706222054.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.birt.chart.device.swt_4.7.0.v201706222054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.core.feature' version='1.5.0.v20180515-1348'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.equinox.p2.core.feature_1.5.0.v20180515-1348/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.equinox.p2.core.feature_1.5.0.v20180515-1348'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.reconciler.dropins' version='1.2.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='50578'/>
+        <property name='download.size' value='50578'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.reconciler.dropins_1.2.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.reconciler.dropins_1.2.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.engine' version='2.6.0.v20180409-1209'>
+      <properties size='2'>
+        <property name='artifact.size' value='215081'/>
+        <property name='download.size' value='215081'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.engine_2.6.0.v20180409-1209.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.engine_2.6.0.v20180409-1209.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.updatechecker' version='1.2.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='18571'/>
+        <property name='download.size' value='18571'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.updatechecker_1.2.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.updatechecker_1.2.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.jruby.resolver' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='23294'/>
+        <property name='download.size' value='23294'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.jruby.resolver_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.jruby.resolver_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore' version='2.14.0.v20180529-1144'>
+      <properties size='2'>
+        <property name='artifact.size' value='1406738'/>
+        <property name='download.size' value='1406738'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.emf.ecore_2.14.0.v20180529-1144.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.emf.ecore_2.14.0.v20180529-1144.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.lucene.analyzers-common' version='7.1.0.v20180122-2126'>
+      <properties size='2'>
+        <property name='artifact.size' value='1693106'/>
+        <property name='download.size' value='1693106'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.lucene.analyzers-common_7.1.0.v20180122-2126.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.lucene.analyzers-common_7.1.0.v20180122-2126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.workbench' version='3.111.0.v20180524-1156'>
+      <properties size='2'>
+        <property name='artifact.size' value='3747375'/>
+        <property name='download.size' value='3747375'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.workbench_3.111.0.v20180524-1156.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.workbench_3.111.0.v20180524-1156.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.httpclient4' version='1.1.300.v20180301-0132'>
+      <properties size='2'>
+        <property name='artifact.size' value='75555'/>
+        <property name='download.size' value='75555'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.provider.filetransfer.httpclient4_1.1.300.v20180301-0132.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.provider.filetransfer.httpclient4_1.1.300.v20180301-0132.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.xmi' version='2.14.0.v20180129-1548'>
+      <properties size='2'>
+        <property name='artifact.size' value='235237'/>
+        <property name='download.size' value='235237'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.emf.ecore.xmi_2.14.0.v20180129-1548.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.emf.ecore.xmi_2.14.0.v20180129-1548.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di.extensions' version='0.15.100.v20180403-1008'>
+      <properties size='2'>
+        <property name='artifact.size' value='11397'/>
+        <property name='download.size' value='11397'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.di.extensions_0.15.100.v20180403-1008.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.di.extensions_0.15.100.v20180403-1008.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.user.ui' version='2.4.0.v20180515-1348'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.equinox.p2.user.ui_2.4.0.v20180515-1348/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.equinox.p2.user.ui_2.4.0.v20180515-1348'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.base' version='4.2.200.v20180611-0500'>
+      <properties size='2'>
+        <property name='artifact.size' value='426261'/>
+        <property name='download.size' value='426261'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.help.base_4.2.200.v20180611-0500.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.help.base_4.2.200.v20180611-0500.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.publisher.eclipse' version='1.3.0.v20180320-1332'>
+      <properties size='2'>
+        <property name='artifact.size' value='237687'/>
+        <property name='download.size' value='237687'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.publisher.eclipse_1.3.0.v20180320-1332.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.publisher.eclipse_1.3.0.v20180320-1332.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.registry' version='3.8.0.v20180426-1327'>
+      <properties size='2'>
+        <property name='artifact.size' value='196218'/>
+        <property name='download.size' value='196218'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.registry_3.8.0.v20180426-1327.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.registry_3.8.0.v20180426-1327.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.rcp.feature' version='1.4.0.v20180515-1348'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.equinox.p2.rcp.feature_1.4.0.v20180515-1348/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.equinox.p2.rcp.feature_1.4.0.v20180515-1348'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.el' version='2.2.0.v201303151357'>
+      <properties size='2'>
+        <property name='artifact.size' value='136435'/>
+        <property name='download.size' value='136435'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/com.sun.el_2.2.0.v201303151357.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\com.sun.el_2.2.0.v201303151357.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.lucene.core' version='7.1.0.v20171214-1510'>
+      <properties size='2'>
+        <property name='artifact.size' value='2948978'/>
+        <property name='download.size' value='2948978'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.lucene.core_7.1.0.v20171214-1510.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.lucene.core_7.1.0.v20171214-1510.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.preferences' version='3.7.100.v20180510-1129'>
+      <properties size='2'>
+        <property name='artifact.size' value='133497'/>
+        <property name='download.size' value='133497'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.preferences_3.7.100.v20180510-1129.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.preferences_3.7.100.v20180510-1129.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di.extensions.supplier' version='0.15.100.v20180427-1454'>
+      <properties size='2'>
+        <property name='artifact.size' value='35326'/>
+        <property name='download.size' value='35326'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.di.extensions.supplier_0.15.100.v20180427-1454.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.di.extensions.supplier_0.15.100.v20180427-1454.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.jsp.jasper.registry' version='1.1.0.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='12788'/>
+        <property name='download.size' value='12788'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.jsp.jasper.registry_1.1.0.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.jsp.jasper.registry_1.1.0.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.platform' version='4.8.0.v20180611-0500'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.platform_4.8.0.v20180611-0500/'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.platform_4.8.0.v20180611-0500'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.directorywatcher' version='1.2.0.v20180130-1836'>
+      <properties size='2'>
+        <property name='artifact.size' value='32294'/>
+        <property name='download.size' value='32294'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.directorywatcher_1.2.0.v20180130-1836.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.directorywatcher_1.2.0.v20180130-1836.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.concurrent' version='1.1.100.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='26532'/>
+        <property name='download.size' value='26532'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.concurrent_1.1.100.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.concurrent_1.1.100.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.themes' version='1.2.100.v20180514-1547'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.themes_1.2.100.v20180514-1547/'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.themes_1.2.100.v20180514-1547'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.httpcomponents.httpcore' version='4.4.6.v20170210-0925'>
+      <properties size='2'>
+        <property name='artifact.size' value='354656'/>
+        <property name='download.size' value='354656'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.httpcomponents.httpcore_4.4.6.v20170210-0925.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.httpcomponents.httpcore_4.4.6.v20170210-0925.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui' version='3.109.100.v20180426-0903'>
+      <properties size='2'>
+        <property name='artifact.size' value='475730'/>
+        <property name='download.size' value='475730'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui_3.109.100.v20180426-0903.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui_3.109.100.v20180426-0903.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.dom.events' version='3.0.0.draft20060413_v201105210656'>
+      <properties size='2'>
+        <property name='artifact.size' value='18205'/>
+        <property name='download.size' value='18205'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator.manipulator' version='2.1.0.v20180103-0918'>
+      <properties size='2'>
+        <property name='artifact.size' value='26541'/>
+        <property name='download.size' value='26541'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.1.0.v20180103-0918.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.simpleconfigurator.manipulator_2.1.0.v20180103-0918.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.transport.ecf' version='1.2.0.v20180222-0922'>
+      <properties size='2'>
+        <property name='artifact.size' value='44228'/>
+        <property name='download.size' value='44228'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.transport.ecf_1.2.0.v20180222-0922.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.transport.ecf_1.2.0.v20180222-0922.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.metadata' version='2.4.0.v20180320-1220'>
+      <properties size='2'>
+        <property name='artifact.size' value='360677'/>
+        <property name='download.size' value='360677'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.metadata_2.4.0.v20180320-1220.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.metadata_2.4.0.v20180320-1220.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.logging' version='1.1.1.v201101211721'>
+      <properties size='2'>
+        <property name='artifact.size' value='73632'/>
+        <property name='download.size' value='73632'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.commons.logging_1.1.1.v201101211721.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface.databinding' version='1.8.200.v20180403-0945'>
+      <properties size='2'>
+        <property name='artifact.size' value='292271'/>
+        <property name='download.size' value='292271'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jface.databinding_1.8.200.v20180403-0945.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jface.databinding_1.8.200.v20180403-0945.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help' version='3.8.100.v20180512-1136'>
+      <properties size='2'>
+        <property name='artifact.size' value='270152'/>
+        <property name='download.size' value='270152'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.help_3.8.100.v20180512-1136.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.help_3.8.100.v20180512-1136.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.ui.help' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='7997383'/>
+        <property name='download.size' value='7997383'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.ui.help_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.ui.help_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.jsp.jasper' version='1.1.0.v20180501-1958'>
+      <properties size='2'>
+        <property name='artifact.size' value='28431'/>
+        <property name='download.size' value='28431'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.jsp.jasper_1.1.0.v20180501-1958.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.jsp.jasper_1.1.0.v20180501-1958.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.resources' version='3.13.0.v20180512-1138'>
+      <properties size='2'>
+        <property name='artifact.size' value='889774'/>
+        <property name='download.size' value='889774'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.resources_3.13.0.v20180512-1138.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.resources_3.13.0.v20180512-1138.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.httpcomponents.httpclient' version='4.5.2.v20170210-0925'>
+      <properties size='2'>
+        <property name='artifact.size' value='1006005'/>
+        <property name='download.size' value='1006005'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.httpcomponents.httpclient_4.5.2.v20170210-0925.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.httpcomponents.httpclient_4.5.2.v20170210-0925.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.dialogs' version='1.1.200.v20180403-0945'>
+      <properties size='2'>
+        <property name='artifact.size' value='46134'/>
+        <property name='download.size' value='46134'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.dialogs_1.1.200.v20180403-0945.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.dialogs_1.1.200.v20180403-0945.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.servlet.jsp' version='2.2.0.v201112011158'>
+      <properties size='2'>
+        <property name='artifact.size' value='106639'/>
+        <property name='download.size' value='106639'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/javax.servlet.jsp_2.2.0.v201112011158.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\javax.servlet.jsp_2.2.0.v201112011158.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64' version='3.107.0.v20180611-0422'>
+      <properties size='2'>
+        <property name='artifact.size' value='2470387'/>
+        <property name='download.size' value='2470387'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.swt.win32.win32.x86_64_3.107.0.v20180611-0422.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.swt.win32.win32.x86_64_3.107.0.v20180611-0422.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.ssl' version='1.2.100.v20180301-0132'>
+      <properties size='2'>
+        <property name='artifact.size' value='14829'/>
+        <property name='download.size' value='14829'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.ssl_1.2.100.v20180301-0132.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.ssl_1.2.100.v20180301-0132.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding.observable' version='1.6.200.v20180424-1922'>
+      <properties size='2'>
+        <property name='artifact.size' value='315220'/>
+        <property name='download.size' value='315220'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.databinding.observable_1.6.200.v20180424-1922.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.databinding.observable_1.6.200.v20180424-1922.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.api' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='856611'/>
+        <property name='download.size' value='856611'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.api_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.api_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.el' version='2.2.0.v201303151357'>
+      <properties size='2'>
+        <property name='artifact.size' value='55399'/>
+        <property name='download.size' value='55399'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/javax.el_2.2.0.v201303151357.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\javax.el_2.2.0.v201303151357.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.lucene.analyzers-smartcn' version='7.1.0.v20180122-2126'>
+      <properties size='2'>
+        <property name='artifact.size' value='3614254'/>
+        <property name='download.size' value='3614254'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.lucene.analyzers-smartcn_7.1.0.v20180122-2126.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.lucene.analyzers-smartcn_7.1.0.v20180122-2126.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.jasper.glassfish' version='2.2.2.v201501141630'>
+      <properties size='2'>
+        <property name='artifact.size' value='2435771'/>
+        <property name='download.size' value='2435771'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.jasper.glassfish_2.2.2.v201501141630.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.jasper.glassfish_2.2.2.v201501141630.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.console' version='1.1.0.v20180130-1836'>
+      <properties size='2'>
+        <property name='artifact.size' value='28593'/>
+        <property name='download.size' value='28593'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.console_1.1.0.v20180130-1836.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.console_1.1.0.v20180130-1836.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore' version='2.14.0.v20180529-1144'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.emf.ecore_2.14.0.v20180529-1144/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.emf.ecore_2.14.0.v20180529-1144'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.ibmdumps' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='65077'/>
+        <property name='download.size' value='65077'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.ibmdumps_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.ibmdumps_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.xmlgraphics' version='2.2.0.v20180410-1551'>
+      <properties size='2'>
+        <property name='artifact.size' value='696382'/>
+        <property name='download.size' value='696382'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.xmlgraphics_2.2.0.v20180410-1551.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.xmlgraphics_2.2.0.v20180410-1551.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.touchpoint.eclipse' version='2.2.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='131566'/>
+        <property name='download.size' value='131566'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.touchpoint.eclipse_2.2.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.touchpoint.eclipse_2.2.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.webapp' version='3.9.100.v20180528-0907'>
+      <properties size='2'>
+        <property name='artifact.size' value='633376'/>
+        <property name='download.size' value='633376'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.help.webapp_3.9.100.v20180528-0907.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.help.webapp_3.9.100.v20180528-0907.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.update.configurator' version='3.4.0.v20180512-1141'>
+      <properties size='2'>
+        <property name='artifact.size' value='96968'/>
+        <property name='download.size' value='96968'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.update.configurator_3.4.0.v20180512-1141.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.update.configurator_3.4.0.v20180512-1141.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.constants' version='1.9.1.v20180227-1645'>
+      <properties size='2'>
+        <property name='artifact.size' value='20819'/>
+        <property name='download.size' value='20819'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.batik.constants_1.9.1.v20180227-1645.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.batik.constants_1.9.1.v20180227-1645.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.sat4j.pb' version='2.3.5.v201404071733'>
+      <properties size='2'>
+        <property name='artifact.size' value='241956'/>
+        <property name='download.size' value='241956'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.sat4j.pb_2.3.5.v201404071733.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.sat4j.pb_2.3.5.v201404071733.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench3' version='0.14.100.v20180403-0945'>
+      <properties size='2'>
+        <property name='artifact.size' value='10928'/>
+        <property name='download.size' value='10928'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.workbench3_0.14.100.v20180403-0945.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.workbench3_0.14.100.v20180403-0945.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.console' version='1.3.0.v20180119-0630'>
+      <properties size='2'>
+        <property name='artifact.size' value='125279'/>
+        <property name='download.size' value='125279'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.console_1.3.0.v20180119-0630.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.console_1.3.0.v20180119-0630.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.util' version='1.1.0.v20180419-0833'>
+      <properties size='2'>
+        <property name='artifact.size' value='83282'/>
+        <property name='download.size' value='83282'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.util_1.1.0.v20180419-0833.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.util_1.1.0.v20180419-0833.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.chart' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='28499'/>
+        <property name='download.size' value='28499'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.chart_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.chart_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.700.v20180518-1200'>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.700.v20180518-1200/'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.700.v20180518-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.birt.chart.device.extension' version='4.7.0.v201706222054'>
+      <properties size='2'>
+        <property name='artifact.size' value='156826'/>
+        <property name='download.size' value='156826'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.birt.chart.device.extension_4.7.0.v201706222054.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.birt.chart.device.extension_4.7.0.v201706222054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.codec' version='1.9.0.v20170208-1614'>
+      <properties size='2'>
+        <property name='artifact.size' value='291070'/>
+        <property name='download.size' value='291070'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.commons.codec_1.9.0.v20170208-1614.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.commons.codec_1.9.0.v20170208-1614.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi' version='3.13.0.v20180409-1500'>
+      <properties size='2'>
+        <property name='artifact.size' value='1428984'/>
+        <property name='download.size' value='1428984'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.osgi_3.13.0.v20180409-1500.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.osgi_3.13.0.v20180409-1500.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding.beans' version='1.4.100.v20180403-0944'>
+      <properties size='2'>
+        <property name='artifact.size' value='79457'/>
+        <property name='download.size' value='79457'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.databinding.beans_1.4.100.v20180403-0944.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.databinding.beans_1.4.100.v20180403-0944.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.io' version='2.2.0.v201405211200'>
+      <properties size='2'>
+        <property name='artifact.size' value='194073'/>
+        <property name='download.size' value='194073'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.commons.io_2.2.0.v201405211200.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.commons.io_2.2.0.v201405211200.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.contenttype' version='3.7.0.v20180426-1644'>
+      <properties size='2'>
+        <property name='artifact.size' value='105529'/>
+        <property name='download.size' value='105529'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.contenttype_3.7.0.v20180426-1644.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.contenttype_3.7.0.v20180426-1644.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.services' version='2.1.100.v20180427-1454'>
+      <properties size='2'>
+        <property name='artifact.size' value='58408'/>
+        <property name='download.size' value='58408'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.services_2.1.100.v20180427-1454.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.services_2.1.100.v20180427-1454.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui' version='2.5.100.v20180425-1343'>
+      <properties size='2'>
+        <property name='artifact.size' value='618312'/>
+        <property name='download.size' value='618312'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.ui_2.5.100.v20180425-1343.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.ui_2.5.100.v20180425-1343.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.ssl.feature' version='1.1.100.v20180301-0132'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.100.v20180301-0132/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.ecf.filetransfer.ssl.feature_1.1.100.v20180301-0132'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.swt' version='0.13.100.v20180515-1637'>
+      <properties size='2'>
+        <property name='artifact.size' value='262185'/>
+        <property name='download.size' value='262185'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.css.swt_0.13.100.v20180515-1637.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.css.swt_0.13.100.v20180515-1637.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.model.workbench' version='2.1.0.v20180429-1333'>
+      <properties size='2'>
+        <property name='artifact.size' value='398635'/>
+        <property name='download.size' value='398635'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.model.workbench_2.1.0.v20180429-1333.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.model.workbench_2.1.0.v20180429-1333.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.hprof' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='125075'/>
+        <property name='download.size' value='125075'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.hprof_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.hprof_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.httpclient4.ssl' version='1.1.100.v20180301-0132'>
+      <properties size='2'>
+        <property name='artifact.size' value='14229'/>
+        <property name='download.size' value='14229'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.provider.filetransfer.httpclient4.ssl_1.1.100.v20180301-0132.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.provider.filetransfer.httpclient4.ssl_1.1.100.v20180301-0132.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.commands' version='0.12.200.v20180427-0801'>
+      <properties size='2'>
+        <property name='artifact.size' value='25604'/>
+        <property name='download.size' value='25604'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.commands_0.12.200.v20180427-0801.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.commands_0.12.200.v20180427-0801.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.widgets' version='1.2.100.v20180403-0945'>
+      <properties size='2'>
+        <property name='artifact.size' value='15356'/>
+        <property name='download.size' value='15356'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.widgets_1.2.100.v20180403-0945.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.widgets_1.2.100.v20180403-0945.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common' version='2.14.0.v20180527-1134'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.emf.common_2.14.0.v20180527-1134/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.emf.common_2.14.0.v20180527-1134'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.operations' version='2.5.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='75935'/>
+        <property name='download.size' value='75935'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.operations_2.5.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.operations_2.5.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.core.feature' version='1.5.0.v20180426-1936'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.ecf.core.feature_1.5.0.v20180426-1936/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.ecf.core.feature_1.5.0.v20180426-1936'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.e4.rcp' version='1.6.100.v20180611-0422'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.e4.rcp_1.6.100.v20180611-0422/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.e4.rcp_1.6.100.v20180611-0422'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.report' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='354358'/>
+        <property name='download.size' value='354358'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.report_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.report_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.contexts' version='1.7.0.v20180514-1409'>
+      <properties size='2'>
+        <property name='artifact.size' value='48573'/>
+        <property name='download.size' value='48573'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.contexts_1.7.0.v20180514-1409.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.contexts_1.7.0.v20180514-1409.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security' version='1.2.400.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='109814'/>
+        <property name='download.size' value='109814'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.security_1.2.400.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.security_1.2.400.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.util' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='522792'/>
+        <property name='download.size' value='522792'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.util_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.util_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher' version='1.5.0.v20180512-1130'>
+      <properties size='2'>
+        <property name='artifact.size' value='54553'/>
+        <property name='download.size' value='54553'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.views' version='3.9.100.v20180427-1355'>
+      <properties size='2'>
+        <property name='artifact.size' value='110493'/>
+        <property name='download.size' value='110493'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.views_3.9.100.v20180427-1355.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.views_3.9.100.v20180427-1355.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.core.ssl.feature' version='1.1.100.v20180301-0201'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.ecf.core.ssl.feature_1.1.100.v20180301-0201/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.ecf.core.ssl.feature_1.1.100.v20180301-0201'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding.property' version='1.6.200.v20180403-0944'>
+      <properties size='2'>
+        <property name='artifact.size' value='165263'/>
+        <property name='download.size' value='165263'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.databinding.property_1.6.200.v20180403-0944.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.databinding.property_1.6.200.v20180403-0944.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem' version='1.7.100.v20180304-1102'>
+      <properties size='2'>
+        <property name='artifact.size' value='66622'/>
+        <property name='download.size' value='66622'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.filesystem_1.7.100.v20180304-1102.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.filesystem_1.7.100.v20180304-1102.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.views.log' version='1.2.200.v20180512-1206'>
+      <properties size='2'>
+        <property name='artifact.size' value='170292'/>
+        <property name='download.size' value='170292'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.views.log_1.2.200.v20180512-1206.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.views.log_1.2.200.v20180512-1206.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.extensionlocation' version='1.3.0.v20180103-0918'>
+      <properties size='2'>
+        <property name='artifact.size' value='35806'/>
+        <property name='download.size' value='35806'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.extensionlocation_1.3.0.v20180103-0918.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.extensionlocation_1.3.0.v20180103-0918.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.gogo.command' version='1.0.2.v20170914-1324'>
+      <properties size='2'>
+        <property name='artifact.size' value='58232'/>
+        <property name='download.size' value='58232'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.felix.gogo.command_1.0.2.v20170914-1324.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.felix.gogo.command_1.0.2.v20170914-1324.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di.annotations' version='1.6.100.v20180427-1454'>
+      <properties size='2'>
+        <property name='artifact.size' value='12258'/>
+        <property name='download.size' value='12258'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.di.annotations_1.6.100.v20180427-1454.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.di.annotations_1.6.100.v20180427-1454.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.ibm.icu' version='58.2.0.v20170418-1837'>
+      <properties size='2'>
+        <property name='artifact.size' value='12058283'/>
+        <property name='download.size' value='12058283'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/com.ibm.icu_58.2.0.v20170418-1837.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\com.ibm.icu_58.2.0.v20170418-1837.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.artifact.repository' version='1.2.0.v20180413-0846'>
+      <properties size='2'>
+        <property name='artifact.size' value='155757'/>
+        <property name='download.size' value='155757'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.artifact.repository_1.2.0.v20180413-0846.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.artifact.repository_1.2.0.v20180413-0846.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator' version='1.3.0.v20180502-1828'>
+      <properties size='2'>
+        <property name='artifact.size' value='45902'/>
+        <property name='download.size' value='45902'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.simpleconfigurator_1.3.0.v20180502-1828.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.simpleconfigurator_1.3.0.v20180502-1828.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.annotation' version='1.2.0.v201602091430'>
+      <properties size='2'>
+        <property name='artifact.size' value='29148'/>
+        <property name='download.size' value='29148'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/javax.annotation_1.2.0.v201602091430.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\javax.annotation_1.2.0.v201602091430.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.birt.core' version='4.7.0.v201706222054'>
+      <properties size='2'>
+        <property name='artifact.size' value='543246'/>
+        <property name='download.size' value='543246'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.birt.core_4.7.0.v201706222054.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.birt.core_4.7.0.v201706222054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.rcp' version='4.8.0.v20180611-0500'>
+      <properties size='2'>
+        <property name='artifact.size' value='11304'/>
+        <property name='download.size' value='11304'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.rcp_4.8.0.v20180611-0500.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.rcp_4.8.0.v20180611-0500.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.css' version='1.9.1.v20180313-1559'>
+      <properties size='2'>
+        <property name='artifact.size' value='359853'/>
+        <property name='download.size' value='359853'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.batik.css_1.9.1.v20180313-1559.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.batik.css_1.9.1.v20180313-1559.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.dtfj' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='132012'/>
+        <property name='download.size' value='132012'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.dtfj_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.dtfj_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.common' version='2.14.0.v20180527-1134'>
+      <properties size='2'>
+        <property name='artifact.size' value='375172'/>
+        <property name='download.size' value='375172'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.emf.common_2.14.0.v20180527-1134.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.emf.common_2.14.0.v20180527-1134.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface.text' version='3.13.0.v20180527-1819'>
+      <properties size='2'>
+        <property name='artifact.size' value='1132016'/>
+        <property name='download.size' value='1132016'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jface.text_3.13.0.v20180527-1819.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jface.text_3.13.0.v20180527-1819.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.commands' version='3.9.100.v20180404-1234'>
+      <properties size='2'>
+        <property name='artifact.size' value='115654'/>
+        <property name='download.size' value='115654'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.commands_3.9.100.v20180404-1234.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.commands_3.9.100.v20180404-1234.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.servlet' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='120088'/>
+        <property name='download.size' value='120088'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.servlet_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.servlet_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.inject' version='1.0.0.v20091030'>
+      <properties size='2'>
+        <property name='artifact.size' value='16996'/>
+        <property name='download.size' value='16996'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/javax.inject_1.0.0.v20091030.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\javax.inject_1.0.0.v20091030.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.util' version='1.9.1.v20180227-1645'>
+      <properties size='2'>
+        <property name='artifact.size' value='147139'/>
+        <property name='download.size' value='147139'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.batik.util_1.9.1.v20180227-1645.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.batik.util_1.9.1.v20180227-1645.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.net' version='1.3.200.v20171208-1604'>
+      <properties size='2'>
+        <property name='artifact.size' value='46637'/>
+        <property name='download.size' value='46637'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.net_1.3.200.v20171208-1604.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.net_1.3.200.v20171208-1604.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt' version='3.107.0.v20180611-0422'>
+      <properties size='2'>
+        <property name='artifact.size' value='19339'/>
+        <property name='download.size' value='19339'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.swt_3.107.0.v20180611-0422.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.swt_3.107.0.v20180611-0422.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.event' version='1.4.200.v20180426-0845'>
+      <properties size='2'>
+        <property name='artifact.size' value='34746'/>
+        <property name='download.size' value='34746'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.event_1.4.200.v20180426-0845.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.event_1.4.200.v20180426-0845.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.renderers.swt' version='0.14.200.v20180516-2019'>
+      <properties size='2'>
+        <property name='artifact.size' value='249639'/>
+        <property name='download.size' value='249639'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.workbench.renderers.swt_0.14.200.v20180516-2019.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.workbench.renderers.swt_0.14.200.v20180516-2019.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.httpclient4.feature' version='3.14.0.v20180301-0132'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.14.0.v20180301-0132/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.ecf.filetransfer.httpclient4.feature_3.14.0.v20180301-0132'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.expressions' version='3.6.100.v20180426-1644'>
+      <properties size='2'>
+        <property name='artifact.size' value='91543'/>
+        <property name='download.size' value='91543'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.expressions_3.6.100.v20180426-1644.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.expressions_3.6.100.v20180426-1644.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.runtime' version='3.14.0.v20180417-0825'>
+      <properties size='2'>
+        <property name='artifact.size' value='74597'/>
+        <property name='download.size' value='74597'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.core.runtime_3.14.0.v20180417-0825.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.core.runtime_3.14.0.v20180417-0825.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.http' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='204848'/>
+        <property name='download.size' value='204848'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.http_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.http_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.css.sac' version='1.3.1.v200903091627'>
+      <properties size='2'>
+        <property name='artifact.size' value='38584'/>
+        <property name='download.size' value='38584'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.w3c.css.sac_1.3.1.v200903091627.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.w3c.css.sac_1.3.1.v200903091627.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.ui' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='894497'/>
+        <property name='download.size' value='894497'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.ui_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.ui_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.chart.ui' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='29462'/>
+        <property name='download.size' value='29462'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.chart.ui_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.chart.ui_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.updatesite' version='1.1.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='99628'/>
+        <property name='download.size' value='99628'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.updatesite_1.1.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.updatesite_1.1.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.cheatsheets' version='3.5.200.v20180418-0908'>
+      <properties size='2'>
+        <property name='artifact.size' value='343112'/>
+        <property name='download.size' value='343112'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.cheatsheets_3.5.200.v20180418-0908.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.cheatsheets_3.5.200.v20180418-0908.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tukaani.xz' version='1.8.0.v20180207-1613'>
+      <properties size='2'>
+        <property name='artifact.size' value='128232'/>
+        <property name='download.size' value='128232'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.tukaani.xz_1.8.0.v20180207-1613.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.tukaani.xz_1.8.0.v20180207-1613.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di' version='1.7.0.v20180427-1454'>
+      <properties size='2'>
+        <property name='artifact.size' value='55107'/>
+        <property name='download.size' value='55107'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.core.di_1.7.0.v20180427-1454.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.core.di_1.7.0.v20180427-1454.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.servlet' version='3.1.0.v201410161800'>
+      <properties size='2'>
+        <property name='artifact.size' value='105237'/>
+        <property name='download.size' value='105237'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/javax.servlet_3.1.0.v201410161800.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\javax.servlet_3.1.0.v201410161800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.http.servlet' version='1.5.0.v20180501-1936'>
+      <properties size='2'>
+        <property name='artifact.size' value='205406'/>
+        <property name='download.size' value='205406'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.http.servlet_1.5.0.v20180501-1936.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.http.servlet_1.5.0.v20180501-1936.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.mozilla.javascript' version='1.7.5.v201504281450'>
+      <properties size='2'>
+        <property name='artifact.size' value='1175232'/>
+        <property name='download.size' value='1175232'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.mozilla.javascript_1.7.5.v201504281450.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.mozilla.javascript_1.7.5.v201504281450.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.ui' version='4.1.100.v20180418-0908'>
+      <properties size='2'>
+        <property name='artifact.size' value='470740'/>
+        <property name='download.size' value='470740'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.help.ui_4.1.100.v20180418-0908.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.help.ui_4.1.100.v20180418-0908.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.birt.chart.engine' version='4.7.0.v201706222054'>
+      <properties size='2'>
+        <property name='artifact.size' value='1767664'/>
+        <property name='download.size' value='1767664'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.birt.chart.engine_4.7.0.v201706222054.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.birt.chart.engine_4.7.0.v201706222054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.continuation' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='23367'/>
+        <property name='download.size' value='23367'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.continuation_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.continuation_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.intro' version='3.5.200.v20180328-0550'>
+      <properties size='2'>
+        <property name='artifact.size' value='346495'/>
+        <property name='download.size' value='346495'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.intro_3.5.200.v20180328-0550.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.intro_3.5.200.v20180328-0550.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.security' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='102572'/>
+        <property name='download.size' value='102572'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.security_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.security_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui.sdk.scheduler' version='1.4.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='103192'/>
+        <property name='download.size' value='103192'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.ui.sdk.scheduler_1.4.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.ui.sdk.scheduler_1.4.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.jarprocessor' version='1.1.0.v20180512-1128'>
+      <properties size='2'>
+        <property name='artifact.size' value='73258'/>
+        <property name='download.size' value='73258'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.jarprocessor_1.1.0.v20180512-1128.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.jarprocessor_1.1.0.v20180512-1128.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.di' version='1.2.200.v20180403-0945'>
+      <properties size='2'>
+        <property name='artifact.size' value='17553'/>
+        <property name='download.size' value='17553'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.di_1.2.200.v20180403-0945.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.di_1.2.200.v20180403-0945.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.change' version='2.12.0.v20180125-1130'>
+      <properties size='2'>
+        <property name='artifact.size' value='103032'/>
+        <property name='download.size' value='103032'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.emf.ecore.change_2.12.0.v20180125-1130.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.emf.ecore.change_2.12.0.v20180125-1130.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.frameworkadmin' version='2.1.0.v20180131-0638'>
+      <properties size='2'>
+        <property name='artifact.size' value='36921'/>
+        <property name='download.size' value='36921'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.frameworkadmin_2.1.0.v20180131-0638.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.frameworkadmin_2.1.0.v20180131-0638.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.gogo.shell' version='1.0.0.v20170914-1324'>
+      <properties size='2'>
+        <property name='artifact.size' value='69789'/>
+        <property name='download.size' value='69789'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.felix.gogo.shell_1.0.0.v20170914-1324.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.felix.gogo.shell_1.0.0.v20170914-1324.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.core' version='2.5.0.v20180512-1128'>
+      <properties size='2'>
+        <property name='artifact.size' value='75637'/>
+        <property name='download.size' value='75637'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.core_2.5.0.v20180512-1128.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.core_2.5.0.v20180512-1128.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.scr' version='2.0.14.v20180117-1452'>
+      <properties size='2'>
+        <property name='artifact.size' value='371014'/>
+        <property name='download.size' value='371014'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.felix.scr_2.0.14.v20180117-1452.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.felix.scr_2.0.14.v20180117-1452.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.director' version='2.4.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='107959'/>
+        <property name='download.size' value='107959'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.director_2.4.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.director_2.4.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.rcp' version='4.8.0.v20180611-0656'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.rcp_4.8.0.v20180611-0656/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.rcp_4.8.0.v20180611-0656'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.http.jetty' version='3.6.0.v20180328-1442'>
+      <properties size='2'>
+        <property name='artifact.size' value='28793'/>
+        <property name='download.size' value='28793'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.http.jetty_3.6.0.v20180328-1442.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.http.jetty_3.6.0.v20180328-1442.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.birt.chart.engine.extension' version='4.7.0.v201706222054'>
+      <properties size='2'>
+        <property name='artifact.size' value='302311'/>
+        <property name='download.size' value='302311'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.birt.chart.engine.extension_4.7.0.v201706222054.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.birt.chart.engine.extension_4.7.0.v201706222054.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench' version='1.6.0.v20180516-2019'>
+      <properties size='2'>
+        <property name='artifact.size' value='265047'/>
+        <property name='download.size' value='265047'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.workbench_1.6.0.v20180516-2019.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.workbench_1.6.0.v20180516-2019.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.text' version='3.6.300.v20180430-1330'>
+      <properties size='2'>
+        <property name='artifact.size' value='269840'/>
+        <property name='download.size' value='269840'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.text_3.6.300.v20180430-1330.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.text_3.6.300.v20180430-1330.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.dom.smil' version='1.0.1.v200903091627'>
+      <properties size='2'>
+        <property name='artifact.size' value='20106'/>
+        <property name='download.size' value='20106'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.w3c.dom.smil_1.0.1.v200903091627.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.director.app' version='1.1.0.v20180502-1549'>
+      <properties size='2'>
+        <property name='artifact.size' value='55949'/>
+        <property name='download.size' value='55949'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.director.app_1.1.0.v20180502-1549.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.director.app_1.1.0.v20180502-1549.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui.importexport' version='1.2.0.v20180126-1930'>
+      <properties size='2'>
+        <property name='artifact.size' value='127364'/>
+        <property name='download.size' value='127364'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.ui.importexport_1.2.0.v20180126-1930.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.ui.importexport_1.2.0.v20180126-1930.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.ide' version='3.14.0.v20180517-1842'>
+      <properties size='2'>
+        <property name='artifact.size' value='2499740'/>
+        <property name='download.size' value='2499740'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ui.ide_3.14.0.v20180517-1842.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ui.ide_3.14.0.v20180517-1842.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.app' version='1.3.500.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='87721'/>
+        <property name='download.size' value='87721'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.app_1.3.500.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.app_1.3.500.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.http.registry' version='1.1.500.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='46372'/>
+        <property name='download.size' value='46372'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.http.registry_1.1.500.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.http.registry_1.1.500.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.swt' version='0.14.200.v20180516-2019'>
+      <properties size='2'>
+        <property name='artifact.size' value='174979'/>
+        <property name='download.size' value='174979'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.workbench.swt_0.14.200.v20180516-2019.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.workbench.swt_0.14.200.v20180516-2019.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.parser' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='374106'/>
+        <property name='download.size' value='374106'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.parser_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.parser_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.ui' version='1.2.0.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='172191'/>
+        <property name='download.size' value='172191'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.security.ui_1.2.0.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.security.ui_1.2.0.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui.sdk' version='1.1.0.v20180103-0918'>
+      <properties size='2'>
+        <property name='artifact.size' value='52486'/>
+        <property name='download.size' value='52486'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.ui.sdk_1.1.0.v20180103-0918.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.ui.sdk_1.1.0.v20180103-0918.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.repository.tools' version='2.2.0.v20180416-1436'>
+      <properties size='2'>
+        <property name='artifact.size' value='253405'/>
+        <property name='download.size' value='253405'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.repository.tools_2.2.0.v20180416-1436.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.repository.tools_2.2.0.v20180416-1436.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.metadata.repository' version='1.3.0.v20180302-1057'>
+      <properties size='2'>
+        <property name='artifact.size' value='133506'/>
+        <property name='download.size' value='133506'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.metadata.repository_1.3.0.v20180302-1057.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.metadata.repository_1.3.0.v20180302-1057.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.ds' version='1.5.100.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='29150'/>
+        <property name='download.size' value='29150'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.ds_1.5.100.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.ds_1.5.100.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.publisher' version='1.5.0.v20180320-1332'>
+      <properties size='2'>
+        <property name='artifact.size' value='99785'/>
+        <property name='download.size' value='99785'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.publisher_1.5.0.v20180320-1332.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.publisher_1.5.0.v20180320-1332.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.repository' version='2.4.0.v20180512-1128'>
+      <properties size='2'>
+        <property name='artifact.size' value='141774'/>
+        <property name='download.size' value='141774'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.repository_2.4.0.v20180512-1128.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.repository_2.4.0.v20180512-1128.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf' version='3.9.0.v20180402-2015'>
+      <properties size='2'>
+        <property name='artifact.size' value='124101'/>
+        <property name='download.size' value='124101'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf_3.9.0.v20180402-2015.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf_3.9.0.v20180402-2015.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.common' version='3.10.0.v20180412-1130'>
+      <properties size='2'>
+        <property name='artifact.size' value='122021'/>
+        <property name='download.size' value='122021'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.common_3.10.0.v20180412-1130.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.common_3.10.0.v20180412-1130.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi.compatibility.state' version='1.1.100.v20180331-1743'>
+      <properties size='2'>
+        <property name='artifact.size' value='244686'/>
+        <property name='download.size' value='244686'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.osgi.compatibility.state_1.1.100.v20180331-1743.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.osgi.compatibility.state_1.1.100.v20180331-1743.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.swt.theme' version='0.12.0.v20180403-0944'>
+      <properties size='2'>
+        <property name='artifact.size' value='29114'/>
+        <property name='download.size' value='29114'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.css.swt.theme_0.12.0.v20180403-0944.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.css.swt.theme_0.12.0.v20180403-0944.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.io' version='9.4.10.v20180503'>
+      <properties size='2'>
+        <property name='artifact.size' value='146999'/>
+        <property name='download.size' value='146999'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.jetty.io_9.4.10.v20180503.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.jetty.io_9.4.10.v20180503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.touchpoint.natives' version='1.3.0.v20180512-1128'>
+      <properties size='2'>
+        <property name='artifact.size' value='78929'/>
+        <property name='download.size' value='78929'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.touchpoint.natives_1.3.0.v20180512-1128.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.touchpoint.natives_1.3.0.v20180512-1128.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.win32.x86_64' version='1.1.0.v20171221-2204'>
+      <properties size='2'>
+        <property name='artifact.size' value='35923'/>
+        <property name='download.size' value='35923'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.security.win32.x86_64_1.1.0.v20171221-2204.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.security.win32.x86_64_1.1.0.v20171221-2204.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.filetransfer' version='5.0.100.v20180301-0132'>
+      <properties size='2'>
+        <property name='artifact.size' value='53282'/>
+        <property name='download.size' value='53282'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.filetransfer_5.0.100.v20180301-0132.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.filetransfer_5.0.100.v20180301-0132.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.feature' version='3.14.0.v20180306-0429'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.ecf.filetransfer.feature_3.14.0.v20180306-0429/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.ecf.filetransfer.feature_3.14.0.v20180306-0429'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.addons.swt' version='1.3.100.v20180516-2019'>
+      <properties size='2'>
+        <property name='artifact.size' value='124980'/>
+        <property name='download.size' value='124980'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.e4.ui.workbench.addons.swt_1.3.100.v20180516-2019.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.e4.ui.workbench.addons.swt_1.3.100.v20180516-2019.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.garbagecollector' version='1.1.0.v20180103-0918'>
+      <properties size='2'>
+        <property name='artifact.size' value='25589'/>
+        <property name='download.size' value='25589'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.p2.garbagecollector_1.1.0.v20180103-0918.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.p2.garbagecollector_1.1.0.v20180103-0918.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi.services' version='3.7.0.v20180223-1712'>
+      <properties size='2'>
+        <property name='artifact.size' value='125904'/>
+        <property name='download.size' value='125904'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.osgi.services_3.7.0.v20180223-1712.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.osgi.services_3.7.0.v20180223-1712.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.ssl' version='1.0.100.v20180301-0132'>
+      <properties size='2'>
+        <property name='artifact.size' value='9927'/>
+        <property name='download.size' value='9927'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.100.v20180301-0132.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.provider.filetransfer.ssl_1.0.100.v20180301-0132.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.dom.svg' version='1.1.0.v201011041433'>
+      <properties size='2'>
+        <property name='artifact.size' value='97382'/>
+        <property name='download.size' value='97382'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.w3c.dom.svg_1.1.0.v201011041433.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.httpclient4.ssl.feature' version='1.1.100.v20180301-0132'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.1.100.v20180301-0132/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.1.100.v20180301-0132'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.jxpath' version='1.3.0.v200911051830'>
+      <properties size='2'>
+        <property name='artifact.size' value='315491'/>
+        <property name='download.size' value='315491'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.apache.commons.jxpath_1.3.0.v200911051830.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.apache.commons.jxpath_1.3.0.v200911051830.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.frameworkadmin.equinox' version='1.1.0.v20180512-1128'>
+      <properties size='2'>
+        <property name='artifact.size' value='67544'/>
+        <property name='download.size' value='67544'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.equinox.frameworkadmin.equinox_1.1.0.v20180512-1128.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.equinox.frameworkadmin.equinox_1.1.0.v20180512-1128.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer' version='3.2.400.v20180306-0429'>
+      <properties size='2'>
+        <property name='artifact.size' value='129428'/>
+        <property name='download.size' value='129428'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.ecf.provider.filetransfer_3.2.400.v20180306-0429.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.ecf.provider.filetransfer_3.2.400.v20180306-0429.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.sat4j.core' version='2.3.5.v201308161310'>
+      <properties size='2'>
+        <property name='artifact.size' value='362968'/>
+        <property name='download.size' value='362968'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.sat4j.core_2.3.5.v201308161310.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.sat4j.core_2.3.5.v201308161310.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mat.ui.rcp.feature' version='1.9.2.202001150834'>
+      <properties size='1'>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/features/org.eclipse.mat.ui.rcp.feature_1.9.2.202001150834/'/>
+        <property name='file.name' value='A:\final-design\mat\features\org.eclipse.mat.ui.rcp.feature_1.9.2.202001150834'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.mat.ui.rcp' version='1.9.2.202001150834'>
+      <properties size='2'>
+        <property name='artifact.size' value='101263'/>
+        <property name='download.size' value='101263'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/A:/final-design/mat/plugins/org.eclipse.mat.ui.rcp_1.9.2.202001150834.jar'/>
+        <property name='file.name' value='A:\final-design\mat\plugins\org.eclipse.mat.ui.rcp_1.9.2.202001150834.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>
