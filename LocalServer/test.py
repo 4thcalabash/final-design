@@ -12,7 +12,7 @@ import subprocess
 # In[3]:
 
 
-HOST = '192.168.31.25'
+HOST = '192.168.101.5'
 PORT = 8890
 
 

@@ -1,0 +1,3 @@
+修改get_static_receiver.pf : 读取AndroidManifest.xml 获取静态注册的receiver，将结果写入data_receiver.txt
+
+完成Receiver Hprof Analyser：读取hprof文件，分析Receiver和Service泄露。
