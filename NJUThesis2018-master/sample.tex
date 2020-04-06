@@ -1,0 +1,373 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%
+%% 使用 njuthesis 文档类生成南京大学本科生毕业论文的示例文档
+%% 
+%%
+
+%% 
+%% 南京大学本科学位论文模板
+%% 2018年封面，摘要都发生了变化，本模板由以下2016年模板更改而来：http://haixing-hu.github.io/nju-thesis/
+
+%% 如需Adobe字体请用（默认）
+%\documentclass[adobefonts]{njuthesis}
+%% MacOS系统请用
+%\documentclass[macfonts]{njuthesis}
+%% Windows系统请用
+\documentclass[winfonts]{njuthesis}
+%% Linux系统请用
+%\documentclass[linuxfonts]{njuthesis}
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 设置论文的中文封面
+% 论文标题
+\title{安卓不可见控件内存泄漏的自动检测}
+
+% 论文作者姓名
+\author{王冬杨}
+% 论文作者学号
+\studentid{161250136}
+% 导师姓名职称
+\supervisor{马骏}
+% 导师职称
+\supervisortitle{副教授}
+% 论文作者院系
+\department{软件学院}
+% 论文作者专业方向
+\major{软件工程}
+% 论文作者的年级
+\grade{2016级}
+% 论文提交日期，需设置年、月、日。此属性可选，默认值为最后一次编译时的日期，精确到日。
+\submitdate{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 设置论文的英文封面
+
+% 论文的英文标题
+\englishtitle{Thesis paper template}
+% 论文作者姓名的拼音
+\englishauthor{San Zhang}
+% 导师姓名职称的英文
+\englishsupervisor{Professor Si Li}
+% 论文作者所在院系的英文名称
+\englishdepartment{School of Electronic Science and Engineering}
+% 论文作者所在学校或机构的英文名称。此属性可选，默认值为``Nanjing University''。
+\englishinstitute{Nanjing University}
+% 论文完成日期的英文形式，默认最后一次编译的时间
+\englishdate{May 20, 2018}
+% 专业
+\englishinstitute{Electronic Information Science and Technology}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 设置论文的页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\lhead{\bfseries 141180092 }
+\chead{安卓不可见控件内存泄漏的自动检测}
+\rhead{王冬杨}
+%\lfoot{From: K. Grant}
+%\cfoot{To: Dean A. Smith}
+%\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% 制作中文封面
+\maketitle
+% 制作英文封面
+% \makeenglishtitle
+% 毕业论文过程管理四页表
+% \controlpage %可以将word文件交给老师签字后扫描转成pdf，然后命名为controlpage.pdf
+
+% 论文的中文摘要
+\begin{abstract}
+
+在安卓应用中，服务和广播得到了广泛应用，提供诸如下载，数据更新，跨应用通信等功能。但由于开发者经常忽视这些不可见控件的生命周期管理，因此内存泄漏发生的几率很高。
+
+本文将会关注新版本安卓系统（Android 8+）中公开服务（Exported Services）以及静态注册的广播接收器的内存泄露问题，阐述公开服务和广播接收器内存泄露的检测方法，并编写一套供服务开发人员使用的自动分析组件内存泄露的检测工具，最后会从应用市场（App Store）中下载真实的应用，进行内存泄漏检测和分析。
+
+% 同时应该注意到，空白页是故意留白，以便章节开头能够出现在偶数页。
+% 中文关键词。关键词之间用中文全角分号隔开，末尾无标点符号。
+\keywords{安卓系统；内存泄漏；安卓服务；安卓广播}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 论文的英文摘要
+% \begin{englishabstract}
+% The diversity of handwritten Chinese text make it a promising but % challenging computer vision problem. 
+% 英文关键词。关键词之间用英文半角逗号隔开，末尾无符号。
+% \englishkeywords{Handwritten Chinese, Text recognition, Deep learning}
+% \end{englishabstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 论文的前言，应放在目录之前，中英文摘要之后
+%
+%\begin{preface}
+%
+%在过去的40年中，手写中文文本领域识别（HCTR）取得了很大的进展[1,2]。
+%
+%\vspace{1cm}
+%\begin{flushright}
+%饶安逸\\
+%2018年5月15日于南大仙林
+%\end{flushright}
+%
+%\end{preface}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 生成论文目录
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 生成插图清单。如无需插图清单则可注释掉下述语句。
+\listoffigures
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 生成附表清单。如无需附表清单则可注释掉下述语句。
+%\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 开始正文部分
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 学位论文的正文应以《绪论》作为第一章
+\chapter{绪论}\label{chapter_introduction}
+\section{研究背景}
+在安卓应用中，服务（Services）和广播（Broadcast）得到了广泛的使用。服务可以在安卓应用的后台保持长期运行，提供诸如下载、数据更新等重要功能。然而，正因为服务长期运行于后台的特点，使其往往容易产生异常（Errors）。如果服务的编写人员缺少警惕性，服务中出现的错误（Bug）可能会导致诸多问题，严重者可能引起应用崩溃，甚至系统死机；广播可以实现跨应用通信，要接收来自系统或者其他应用的广播，应用需要编写广播接收器（Broadcast Receiver），广播接收器将在UI线程运行，因此不适合进行耗时操作，通常会在广播接收器中启动服务来进行后续的处理，因此广播接收器也可能通过服务或者自身导致内存泄漏。
+
+安卓应用中的内存泄露指资源（内存对象、句柄、服务等）将不再被使用，但却无法被垃圾回收机制（GC）回收，同时也是服务中的一大类常见问题。服务如果出现内存泄露，将会导致内存使用量意外大幅度增加，进而使得系统效率降低，严重影响用户体验。
+
+服务如果设定'exported:true'，则该服务可以被其他应用所调用，因此内存泄露的问题将会变得更加复杂。
+
+由于在安卓8及更高的版本下，安卓操作系统的“电池优化策略”禁止跨应用启动后台服务，而这一方式在安卓7以及更早的版本中是可行的，因此在新版本的安卓系统中，公开服务的内存泄漏检测方法与之前的方法\cite{jun2018lesdroid}有所差别，也正因为禁止跨应用启动后台服务，公开服务的内存泄漏问题也得到了很大的规避。
+
+%\begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.9\textwidth]{style.png} % requires the graphicx package
+%   \caption{不同的书写风格。对于同一句话，有不同的书写风格：倾斜，写错字，工整，潦草等。}
+%   \label{fig:style}
+%\end{figure}
+
+\section{相关工作}
+
+Erika 等人在安卓8之前的版本中，编写了一个检测跨应用通信安全问题的工具Com Droid\cite{chin2011analyzing}，文中阐述的方法对于跨应用测试具有指导意义。
+
+
+在安卓8之前的版本中，跨应用启动服务这一行为是被允许的，南京大学的马骏等人安卓8之前的版本中，实现过一个公开服务（Exported Services）内存泄漏的检测工具LES Droid\cite{jun2018lesdroid}，文中采用的方式分为四步：
+
+\begin{enumerate}
+	\item 使用apktool反编译工具\cite{apktool}获取被测试应用的AndroidManifest.xml文件，解析获取应用中所有的公开服务的包名和类名。
+	\item 将测试驱动应用、被测试应用通过adb安装到模拟器中，启动测试驱动应用。
+	\item 测试驱动应用重复启动、关闭被测试的服务，在满足一定测试强度之后，导出被测试应用的堆镜像文件（.hprof files）。
+	\item 基于MAT内存分析库\cite{mat}编写堆镜像文件的分析工具，自动检测内存泄漏并统计泄露的入口等。
+\end{enumerate}
+
+
+文中的数据指出：在41537个被测试应用中，共在其中28662（69\%）个应用中检测出74831个服务，其中3934（13.7\%）个应用拥有公开服务。经过去重、安装测试以及应用商店评分筛选，有375个实际测试应用，最终通过不同的测试配置，最终检测到在18.7\%的应用中有16.8\%的服务存在内存泄漏问题。
+
+
+\section{本文主要工作}
+本文旨在探索一套适用于安卓8以上版本的公开服务和静态注册广播接收器的内存泄漏检测方法。主要工作如下：
+\begin{enumerate}
+\item 找到在安卓8以上版本的安卓系统上可行的跨应用测试方法。
+
+\item 对桩应用上进行测试，并能发现所有泄露。
+
+\item 在应用商店中下载真实应用，进行自动化测试分析实验结果。
+
+\end{enumerate}
+\section{本文结构}
+本文的各章节组织结构如下：
+
+第一章：绪论。简要说明了手写中文文本识别的研究来由及相关工作。并概括地描述了这篇文章的工作，总结了本文结构。
+
+第二章：识别系统
+
+第三章：实验。介绍了实验进行的配置环境，文中使用的测度，文本分行的结果，识别的结果并分析了得到这种结果背后的缘由。
+
+第四章：总结与讨论。总结全文工作，讨论存在的问题和今后可以继续研究的方向。
+
+\chapter{系统}\label{chapter_system}
+
+怎么使用这个模板
+
+\section{图片}
+
+一行一图，如图\ref{fig:line}
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=0.7\textwidth]{line.png} % requires the graphicx package
+   \caption{待分行文本}
+   \label{fig:line}
+   %\vspace{0.8cm} % 用来调整和下方文字的间距
+\end{figure}
+
+
+一行两个图
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{.5\textwidth}
+    	\centering
+        \includegraphics[width=0.9\textwidth]{lstm1.png}
+        \caption{长短时记忆单元模块}
+    \end{subfigure}
+    \begin{subfigure}{.4\textwidth}
+    	\centering
+        \includegraphics[width=0.8\textwidth]{lstm2.png}
+        \caption{深双向长短时记忆}
+        \label{fig:lstm2}
+    \end{subfigure}
+    \caption{(a)一个长短时记忆单元模块。(b)深度双向长短时记忆的结构。}
+\label{fig:lstm}
+\end{figure}
+
+多行多图
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.59\textwidth]{line1.png}
+        \caption{全局损失切割}
+        \label{fig:line1}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+    	\centering
+        \includegraphics[width=0.59\textwidth]{line2.png}
+        \caption{局部损失切割}
+        \label{fig:line2}
+    \end{subfigure}
+    \caption{分行结果比较。（a）全局损失切割；（b）局部损失切割；（c）局部水平投影切割；（d）投影损失切割}
+\end{figure}
+
+\newpage %为了将图片实例放在一起，另起一页，使用时请删掉
+
+
+\section{公式}
+
+\begin{equation}
+\frac{\partial L}{\partial a_{k}^t} = {d(s)}^2 (y_{k}^t - \frac{\sum_{lab(\mathbf{l},k)} \alpha_t(s)\beta_t(s) }{y_{k}^t} )
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+d_{{0j}}&=\sum _{{k=1}}^{{j}}w_{{\mathrm  {ins}}}(a_{{k}}),\quad &{\text{for}}\;1\leq j\leq n\\
+d_{{ij}}&={\begin{cases}d_{{i-1,j-1}}&{\text{for}}\;a_{{j}}=b_{{i}}\\\min {\begin{cases}d_{{i-1,j}}+w_{{\mathrm  {del}}}(b_{{i}})\\d_{{i,j-1}}+w_{{\mathrm  {ins}}}(a_{{j}})\\d_{{i-1,j-1}}+w_{{\mathrm  {sub}}}(a_{{j}},b_{{i}})\end{cases}}&{\text{for}}\;a_{{j}}\neq b_{{i}}\end{cases}}\quad &{\text{for}}\;1\leq i\leq m,1\leq j\leq n.
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+&\beta_T(|l{}'|)=y_{b}^{T}\\
+&\beta_T(|l{}'|-1)=y_{l_|l|}^{T} \\
+&\beta_T(s)=0, \forall s < |l{}'|-1
+\end{aligned}
+\end{equation}
+
+递归公式
+\begin{equation}
+\beta_t(s)=\left\{
+\begin{aligned}
+& (\beta_{t+1}(s) d(s)+\beta_{t+1}(s+1))d(s+1)\,  y_{\l_s{}'}^t, \: \: if \:  l_s{}'=b \:  or \:  l_{s+2}{}'=l_s{}'\\
+& (\beta_{t+1}(s) d(s)+\beta_{t+1}(s+1)d(s+1)+\beta_{t+1}(s+2)d(s+2))\,  y_{\l_s{}'}^t,\: \:   otherwise
+\end{aligned}
+\right.
+\end{equation}
+
+\section{表格}
+
+\begin{table}[htbp]
+\setlength{\belowcaptionskip}{7pt}
+  \centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline 
+  &   & 国 & 内 & 企 & 业 & 包 & 括 & 许 & 多 \\ 
+\hline 
+  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 
+\hline 
+国 & 1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ 
+\hline 
+著 & 2 & 1 & 1 & 2 & 2 & 3 & 4 & 5 & 6 \\ 
+\hline
+\end{tabular} 
+\vspace{0.2cm}
+  \caption{编辑距离（乐文斯汀距离计算过程示例表格。字符串``国内企业包括许多''与``国著名括许多''乐文斯汀距离是3。}\label{table:ld}
+\end{table}
+
+
+\section{算法}
+
+\begin{algorithm}
+\caption{Beam Search}
+\label{alg:beam}
+\begin{algorithmic}[1]
+\STATE {将初始节点插入到集束中。} 
+\WHILE{遍历未结束}
+\STATE {遍历集束中所有节点的后续节点。} 
+\IF{该节点是目标节点}
+\STATE {算法结束。}
+\ELSE 
+\STATE {扩展该节点，取集束宽度的节点入堆。}
+\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+集束宽度可以在搜索过程中保持为一个定值，也可以根据搜索的进行而变化。搜索算法可以根据搜索的结果进行调整，比如，当以一个小的集束宽度搜索解却无法找到适合解的时候，可以增大集束宽度重新进行一次搜索。
+
+
+
+\chapter{实验}
+
+\section{实现细节}
+我们在Tensorflow框架上实现了我们的网络系统。实验在一个搭载2.40GHz 英特尔志强 Xeon E5-2673 CPU，32GB RAM 和一块英伟达1080Ti 12GB 显存的服务器电脑上运行。网络系统使用Adam训练算法。
+
+
+
+\section{文本分行结果}
+尽管如此，在局部损失切割和局部水平投影切割之后，每一个竖直段的分行结果的对应关系却很难处理。在一些特殊情况下，无法做到每一竖直段分行关系的对应。所以这两个方法不适用。
+
+
+
+
+\section{识别结果}
+
+\subsection{准确率}
+我们根据数据集中人的笔迹将数据集分为了\textbf{HWDB1}-\textbf{HWDB3}，并实现了Wang 等人\cite{wang2012end} 和Mishra 等人\cite{mishra2012scene}的方法，通过调用百度的文字识别系统\cite{baiduapi},进行对比实验得到以下结果。
+
+\vspace{0.2cm}
+\begin{table}[htbp]
+\setlength{\belowcaptionskip}{5pt}
+  \centering
+  \begin{tabular}{cccc}
+    \toprule
+    \textbf{方法} & \textbf{HWDB1} & \textbf{HWDB2} & \textbf{HWDB3} \\
+    \midrule
+    Wang 等人\cite{wang2012end}   			& 74.0 & 60.0 & 68.0  \\
+    Mishra 等人\cite{mishra2012scene}		 	& 80.8 & 63.6 & 73.5  \\
+    百度通用文字识别\cite{baiduapi}		& 64.8 & 36.8 & 60.8 \\
+    \midrule
+    我们的方法（没有字典信息）& 81.5 & 67.5 & 73.6  \\
+    我们的方法	  		& \textbf{81.8} & \textbf{67.8} & \textbf{73.9}  \\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.2cm}
+  \caption{识别准确率}\label{table:result}
+\end{table}
+
+
+
+\chapter{总结与讨论}
+在本文中，我们使用预处理层-卷积层-循环卷积层-转录层网络来处理手写中文文本识别的问题。这种网络很好地结合了卷积网络和循环网络各自的优势。
+
+\bibliography{sample}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 致谢，应放在结论之后
+\begin{acknowledgement}
+感谢在实验室度过的两年时光，老师无论在学术还是人生的指导上都对我起到了很大的帮助；师兄师姐小伙伴们的鼓励支持和陪伴是我坚持下去的动力。
+\end{acknowledgement}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

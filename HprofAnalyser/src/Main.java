@@ -135,8 +135,17 @@ public class Main {
             String rname = "";
             if (pre != null) {
                 List<NamedReference> references = pthobj.getOutboundReferences();
+                int id1 = -1;
+                int id2 = 1;
                 for (NamedReference ref : references) {
-                    if (ref.getObjectId() == pre.getObjectId()) {
+                    //System.out.println(ref);
+                    try{
+                        id1 = ref.getObjectId();
+                        id2 = pre.getObjectId();
+                    }catch (Exception e){
+
+                    }
+                    if (id1 == id2) {
                         String refname = ref.getName();
                         if (refname.matches("\\[[0-9]+\\]")) {
                             refname = "[ ]";

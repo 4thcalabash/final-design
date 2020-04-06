@@ -27,12 +27,12 @@ def get_exported_services(xml_path):
         count = 0
         for action in actions:
             if action.getAttribute('android:name') == 'android.intent.action.MAIN':
-                count += 1
+                count = count | 1
         categories = activity.getElementsByTagName('category')
         for category in categories:
             if (category.getAttribute('android:name') == 'android.intent.category.LAUNCHER'):
-                count += 1
-        if (count == 2):
+                count = count | 2
+        if (count == 3):
             main_activity.append(activity.getAttribute('android:name'))
     package_name = manifest.getAttribute('package')
     return [package_name,exported_services,main_activity]
@@ -45,9 +45,19 @@ def writeDataFile(pkgname,svclist,main_activity):
     f = open('data.txt','w')
     f.write(pkgname)
     f.write('\n')
-    f.write(svclist[0])
+    f.write(str(len(svclist)))
     f.write('\n')
+    for svc in svclist:
+        f.write(svc)
+        f.write('\n')
     f.write(main_activity[0])
+    f.write('\n')
+    t = main_activity[0]
+    list = t.split('.')
+    length = len(list[len(list)-1])
+    tt = t[0:len(t) - length - 1]
+    tt = tt + '/.' + list[len(list)- 1]
+    f.write(tt)
     f.write('\n')
     f.close()
 

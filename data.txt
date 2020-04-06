@@ -1,3 +1,14 @@
-com.example.myapplication
-com.example.myapplication.LeakService
-com.example.myapplication.MainActivity
+com.smile.gifmaker
+10
+com.yxcorp.gifshow.push.PushService
+com.yxcorp.gifshow.keepalive.MIUIAlarmService
+com.yxcorp.gifshow.keepalive.MIUIAlarmJobService
+com.kwai.video.editorsdk2.ExportTaskRemoteService
+com.kwai.video.editorsdk2.ThumbnailRemoteService
+com.yxcorp.gifshow.service.EncodeBenchmarkService
+com.coloros.mcssdk.PushService
+com.vivo.push.sdk.service.CommandClientService
+com.xiaomi.mipush.sdk.PushMessageHandler
+com.meizu.cloud.pushsdk.NotificationService
+com.yxcorp.gifshow.HomeActivity
+com.yxcorp.gifshow/.HomeActivity
