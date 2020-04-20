@@ -50,6 +50,11 @@
   \bibcitedate{[2020-04-06]}\@.
   \newline\url{https://github.com/joebowbeer/andromat}\@.
 
+\bibitem{service}
+\bibbooktitle{Android Sercice Guide}\bibmark{[K/OL]}\@. \bibyear{2020}
+  \bibcitedate{[2020-04-20]}\@.
+  \newline\url{https://developer.android.com/guide/components/services.html}\@.
+
 \bibitem{wang2012end}
 \bibauthor{WANG T\@, WU D~J\@, COATES A, et~al}\@. \bibtitle{End-to-end text
   recognition with convolutional neural networks}\bibmark{[C]}

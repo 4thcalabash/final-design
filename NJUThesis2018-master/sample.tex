@@ -16,6 +16,8 @@
 %\documentclass[macfonts]{njuthesis}
 %% Windows系统请用
 \documentclass[winfonts]{njuthesis}
+%\usepackage{enumerate}
+\usepackage{enumitem}
 %% Linux系统请用
 %\documentclass[linuxfonts]{njuthesis}
 \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
@@ -61,6 +63,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置论文的页眉页脚
 \usepackage{fancyhdr}
+%\usepackage{enumitem}
+
 \pagestyle{fancy}
 %\lhead{\bfseries 141180092 }
 \chead{安卓不可见控件内存泄漏的自动检测}
@@ -71,6 +75,23 @@
 \renewcommand{\headrulewidth}{0.4pt}
 %\renewcommand{\footrulewidth}{0.4pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xcolor}
+\usepackage{minted}
+
+\usepackage{listings}
+
+\usepackage{color}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	showstringspaces=false,
+	commentstyle=\color{gray}\upshape
+}
 \begin{document}
 
 % 制作中文封面
@@ -180,72 +201,88 @@ Erika 等人在安卓8之前的版本中，编写了一个检测跨应用通信�
 \end{enumerate}
 \section{本文结构}
 本文的各章节组织结构如下：
+\begin{itemize}
+	\item[第一章] 绪论。简要说明了安卓组件内存泄漏的现象和后果。并概括地描述了检测安卓不可见控件内存泄漏的方法流程，总结了本文结构。
+	\item[第二章] 自动化检测工具。
+	\item[第三章] 实验。介绍了实验进行的配置环境，测试使用应用的来源，以及实验数据结果。
+	\item[第四章] 总结与讨论。总结全文工作，讨论存在的问题和今后可以继续研究的方向。
+\end{itemize}
 
-第一章：绪论。简要说明了手写中文文本识别的研究来由及相关工作。并概括地描述了这篇文章的工作，总结了本文结构。
+\chapter{自动化检测工具}\label{chapter_system}
 
-第二章：识别系统
+本章将介绍安卓控件启动的流程，及检测内存泄露的原理。
 
-第三章：实验。介绍了实验进行的配置环境，文中使用的测度，文本分行的结果，识别的结果并分析了得到这种结果背后的缘由。
+\section{背景}
+\subsection{安卓服务}
+安卓应用中的服务可以通过两种方式启动\cite{service}：
 
-第四章：总结与讨论。总结全文工作，讨论存在的问题和今后可以继续研究的方向。
+\textbf{start 方式 } 其他组件构造特定的\textbf{Intent}对象，通过调用\textbf{startService() API}来启动目标服务。
 
-\chapter{系统}\label{chapter_system}
+\textbf{bind 方式 } 通过调用\textbf{bindService() API}将目标服务与特定组件绑定。被绑定的服务提供接口供其他组件与之交互。
+一个服务可以同时通过以上两种方式启动。
 
-怎么使用这个模板
+\subsection{服务的生命周期}
+服务的生命周期根据启动方式不同分为两种\cite{service}：
 
-\section{图片}
+\textbf{start 方式 } 通过\textbf{startService() API}启动的服务将会一直运行，直到调用\textbf{stopSelf()}方法将自己停止运行。其他组件也可以通过调用\textbf{stopService() API}将服务停止运行。
 
-一行一图，如图\ref{fig:line}
-\begin{figure}[htbp]
-   \centering
-   \includegraphics[width=0.7\textwidth]{line.png} % requires the graphicx package
-   \caption{待分行文本}
-   \label{fig:line}
-   %\vspace{0.8cm} % 用来调整和下方文字的间距
-\end{figure}
+停止运行的服务将会被\textbf{GC(Garbage Collector)}回收。
 
+\textbf{bind 方式 } 通过\textbf{bindService() API}启动的服务将通过\textbf{IBinder}接口与其他组件进行交互，直到其他组件调用\textbf{unbindService() API}解除绑定。
 
-一行两个图
-\begin{figure}[ht!]
-    \centering
-    \begin{subfigure}{.5\textwidth}
-    	\centering
-        \includegraphics[width=0.9\textwidth]{lstm1.png}
-        \caption{长短时记忆单元模块}
-    \end{subfigure}
-    \begin{subfigure}{.4\textwidth}
-    	\centering
-        \includegraphics[width=0.8\textwidth]{lstm2.png}
-        \caption{深双向长短时记忆}
-        \label{fig:lstm2}
-    \end{subfigure}
-    \caption{(a)一个长短时记忆单元模块。(b)深度双向长短时记忆的结构。}
-\label{fig:lstm}
-\end{figure}
+一个服务可以同时绑定到多个组件之上，直到所有组件都解除了绑定时，该服务才会被\textbf{GC}回收。
 
-多行多图
-\begin{figure}[ht!]
-    \centering
-    \begin{subfigure}{\textwidth}
-        \centering
-        \includegraphics[width=0.59\textwidth]{line1.png}
-        \caption{全局损失切割}
-        \label{fig:line1}
-    \end{subfigure}
-    \begin{subfigure}{\textwidth}
-    	\centering
-        \includegraphics[width=0.59\textwidth]{line2.png}
-        \caption{局部损失切割}
-        \label{fig:line2}
-    \end{subfigure}
-    \caption{分行结果比较。（a）全局损失切割；（b）局部损失切割；（c）局部水平投影切割；（d）投影损失切割}
-\end{figure}
+每个安卓应用都关联一个\textbf{ActivityThread}实例，负责调度和执行该应用的各种组件。\textbf{ActivityThread}有一个\textbf{ArrayMap}类型的成员变量\textbf{mServices}，其中保存了所有没有被销毁的服务的引用。一旦某个服务的实例被销毁，其引用将会从\textbf{mServices}中删除。
 
-\newpage %为了将图片实例放在一起，另起一页，使用时请删掉
-
-
+\subsection{服务的注册方式}
+\begin{listing}[htbp]
+	\centering
+	\caption{服务的注册方式}
+	\begin{minted}[encoding=utf8,
+	frame=single,
+	framesep = 1em,
+	numbers=left, 
+	breaklines=true, 
+	tabsize=4,
+	xleftmargin=2em,xrightmargin=2em,
+	fontsize=\footnotesize]{xml}
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.myapplication">
+    <dist:module dist:instant="true" />
+    <application ...>
+        ...
+        <service android:name=".Service1"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name = ".Service2"
+            android:enabled = "true"
+            android:exported = "false">
+            <intent-filter>
+                <category android:name = "cat1"/>
+                <action android:name = "act2"/>
+            </intent-filter>
+        </service>
+        <service android:name = ".Service3"
+            android:enabled = "true"
+            android:permission = "Permission1">
+            <intent-filter>
+                <action android:name = "act3"/>
+                <category android:name = "cat2"/>
+                <data android:scheme = "Scheme1"/>
+                <data android:scheme = "Scheme2"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
+	\end{minted}
+	\label{declaration:service}
+\end{listing}
 \section{公式}
-
+通常，每个服务都要在\textbf{AndroidManifest.xml}中注册一个\textbf{<service>}标签（参考Listing.\textcolor{red}{\ref{declaration:service}}中的样例）
 \begin{equation}
 \frac{\partial L}{\partial a_{k}^t} = {d(s)}^2 (y_{k}^t - \frac{\sum_{lab(\mathbf{l},k)} \alpha_t(s)\beta_t(s) }{y_{k}^t} )
 \end{equation}

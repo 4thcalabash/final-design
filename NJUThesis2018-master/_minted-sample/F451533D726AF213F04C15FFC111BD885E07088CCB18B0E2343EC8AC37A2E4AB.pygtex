@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}manifest}
+    \PYG{n+na}{xmlns:android=}\PYG{l+s}{\PYGZdq{}http://schemas.android.com/apk/res/android\PYGZdq{}}
+    \PYG{n+na}{xmlns:dist=}\PYG{l+s}{\PYGZdq{}http://schemas.android.com/apk/distribution\PYGZdq{}}
+    \PYG{n+na}{package=}\PYG{l+s}{\PYGZdq{}com.example.myapplication\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}dist:module} \PYG{n+na}{dist:instant=}\PYG{l+s}{\PYGZdq{}true\PYGZdq{}} \PYG{n+nt}{/\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}application} \PYG{err}{...}\PYG{n+nt}{\PYGZgt{}}
+        ...
+        \PYG{n+nt}{\PYGZlt{}service} \PYG{n+na}{android:name=}\PYG{l+s}{\PYGZdq{}.Service1\PYGZdq{}}
+            \PYG{n+na}{android:enabled=}\PYG{l+s}{\PYGZdq{}true\PYGZdq{}}
+            \PYG{n+na}{android:exported=}\PYG{l+s}{\PYGZdq{}true\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}/service\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}service}
+            \PYG{n+na}{android:name =} \PYG{l+s}{\PYGZdq{}.Service2\PYGZdq{}}
+            \PYG{n+na}{android:enabled =} \PYG{l+s}{\PYGZdq{}true\PYGZdq{}}
+            \PYG{n+na}{android:exported =} \PYG{l+s}{\PYGZdq{}false\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+            \PYG{n+nt}{\PYGZlt{}intent\PYGZhy{}filter\PYGZgt{}}
+                \PYG{n+nt}{\PYGZlt{}category} \PYG{n+na}{android:name =} \PYG{l+s}{\PYGZdq{}cat1\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+                \PYG{n+nt}{\PYGZlt{}action} \PYG{n+na}{android:name =} \PYG{l+s}{\PYGZdq{}act2\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+            \PYG{n+nt}{\PYGZlt{}/intent\PYGZhy{}filter\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}/service\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}service} \PYG{n+na}{android:name =} \PYG{l+s}{\PYGZdq{}.Service3\PYGZdq{}}
+            \PYG{n+na}{android:enabled =} \PYG{l+s}{\PYGZdq{}true\PYGZdq{}}
+            \PYG{n+na}{android:permission =} \PYG{l+s}{\PYGZdq{}Permission1\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+            \PYG{n+nt}{\PYGZlt{}intent\PYGZhy{}filter\PYGZgt{}}
+                \PYG{n+nt}{\PYGZlt{}action} \PYG{n+na}{android:name =} \PYG{l+s}{\PYGZdq{}act3\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+                \PYG{n+nt}{\PYGZlt{}category} \PYG{n+na}{android:name =} \PYG{l+s}{\PYGZdq{}cat2\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+                \PYG{n+nt}{\PYGZlt{}data} \PYG{n+na}{android:scheme =} \PYG{l+s}{\PYGZdq{}Scheme1\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+                \PYG{n+nt}{\PYGZlt{}data} \PYG{n+na}{android:scheme =} \PYG{l+s}{\PYGZdq{}Scheme2\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+            \PYG{n+nt}{\PYGZlt{}/intent\PYGZhy{}filter\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}/service\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}/application\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/manifest\PYGZgt{}}
+\end{Verbatim}
