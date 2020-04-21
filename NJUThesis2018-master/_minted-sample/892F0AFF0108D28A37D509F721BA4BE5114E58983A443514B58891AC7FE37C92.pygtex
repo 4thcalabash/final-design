@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{LeakReceiver} \PYG{k+kd}{extends} \PYG{n}{BroadcastReceiver} \PYG{p}{\PYGZob{}}
+	\PYG{k+kd}{private} \PYG{k+kd}{final} \PYG{n}{String} \PYG{n}{TAG} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}LeakReceiver\PYGZdq{}}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{k+kd}{final} \PYG{k+kt}{int} \PYG{n}{ID} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Random}\PYG{p}{().}\PYG{n+na}{nextInt}\PYG{p}{();}
+	\PYG{n+nd}{@Override}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{onReceive}\PYG{p}{(}\PYG{n}{Context} \PYG{n}{context}\PYG{p}{,} \PYG{n}{Intent} \PYG{n}{intent}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{p}{...}
+		\PYG{n}{context}\PYG{p}{.}\PYG{n+na}{startService}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Intent}\PYG{p}{(}\PYG{n}{context}\PYG{p}{,}\PYG{n}{LeakService}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{));}
+		\PYG{k}{new} \PYG{n}{Timer}\PYG{p}{().}\PYG{n+na}{scheduleAtFixedRate}\PYG{p}{(}\PYG{k}{new} \PYG{n}{TimerTask}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+			\PYG{n+nd}{@Override}
+			\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{run}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+				\PYG{n}{Log}\PYG{p}{.}\PYG{n+na}{i}\PYG{p}{(}\PYG{n}{TAG}\PYG{p}{,}\PYG{n}{LeakReceiver}\PYG{p}{.}\PYG{n+na}{this}\PYG{p}{.}\PYG{n+na}{ID} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} is running!\PYGZdq{}}\PYG{p}{);}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{},} \PYG{l+m+mi}{1000L}\PYG{p}{,} \PYG{l+m+mi}{3000L}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

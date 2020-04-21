@@ -55,23 +55,9 @@
   \bibcitedate{[2020-04-20]}\@.
   \newline\url{https://developer.android.com/guide/components/services.html}\@.
 
-\bibitem{wang2012end}
-\bibauthor{WANG T\@, WU D~J\@, COATES A, et~al}\@. \bibtitle{End-to-end text
-  recognition with convolutional neural networks}\bibmark{[C]}
-  //\thinspace{}\bibbooktitle{Pattern Recognition (ICPR), 2012 21st
-  International Conference on}\@. \bibyear{2012}\thinspace{}\textnormal{:
-  }\bibpages{3304\thinspace{}\textnormal{--}\thinspace{}3308}\@.
-
-\bibitem{mishra2012scene}
-\bibauthor{MISHRA A\@, ALAHARI K\@, JAWAHAR C}\@. \bibtitle{Scene text
-  recognition using higher order language priors}\bibmark{[C]}
-  //\thinspace{}\bibbooktitle{BMVC 2012-23rd British Machine Vision
-  Conference}\@. \bibyear{2012}\@.
-
-\bibitem{baiduapi}
-\bibauthor{{BAIDU}}\@. \bibtitle{{BAIDU Text Recognition}}\bibmark{[EB/OL]}\@.
-  \bibpublisher{BAIDU}\@, \bibyear{2018} \bibmodifydate{(2018/05/10)}
-  \bibcitedate{[2018/05/10]}\@.
-  \newline\url{https://cloud.baidu.com/product/ocr.html}\@.
+\bibitem{broadcast}
+\bibbooktitle{Android Broadcast Guide}\bibmark{[K/OL]}\@. \bibyear{2020}
+  \bibcitedate{[2020-04-21]}\@.
+  \newline\url{https://developer.android.com/guide/components/broadcasts}\@.
 
 \end{thebibliography}
