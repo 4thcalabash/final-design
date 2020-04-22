@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+apktool d \PYGZhy{}f \PYG{n+nv}{\PYGZdl{}test\PYGZus{}apk}\PYGZdl{} \PYGZhy{}o temp
+\end{Verbatim}

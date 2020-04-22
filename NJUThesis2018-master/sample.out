@@ -16,6 +16,10 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 广播接收器的注册方式}{section.2.2}% 16
 \BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 广播接收器的内存泄漏}{section.2.2}% 17
 \BOOKMARK [1][-]{section.2.3}{2.3 自动化检测工具原理}{chapter.2}% 18
-\BOOKMARK [0][-]{chapter.3}{3 总结与讨论}{}% 19
-\BOOKMARK [0][-]{chapter*.3}{参考文献}{}% 20
-\BOOKMARK [0][-]{chapter*.4}{致 谢}{}% 21
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Apk 文件解析器}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 测试驱动App}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 测试主流程}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 内存分析器}{section.2.3}% 22
+\BOOKMARK [0][-]{chapter.3}{3 总结与讨论}{}% 23
+\BOOKMARK [0][-]{chapter*.4}{参考文献}{}% 24
+\BOOKMARK [0][-]{chapter*.5}{致 谢}{}% 25

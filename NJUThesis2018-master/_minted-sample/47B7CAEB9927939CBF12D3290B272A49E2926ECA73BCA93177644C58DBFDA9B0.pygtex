@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{xml.dom.minidom} \PYG{k+kn}{import} \PYG{n}{parse}
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}exported\PYGZus{}services}\PYG{p}{(}\PYG{n}{xml\PYGZus{}path}\PYG{p}{):}
+	\PYG{n}{exported\PYGZus{}services} \PYG{o}{=} \PYG{p}{[]}
+	\PYG{n}{manifest} \PYG{o}{=} \PYG{n}{parse}\PYG{p}{(}\PYG{n}{xml\PYGZus{}path}\PYG{p}{)}\PYG{o}{.}\PYG{n}{documentElement}
+	\PYG{k}{for} \PYG{n}{service} \PYG{o+ow}{in} \PYG{n}{manifest}\PYG{o}{.}\PYG{n}{getElementsByTagName}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}service\PYGZsq{}}\PYG{p}{):}
+		\PYG{n}{exported} \PYG{o}{=} \PYG{n}{service}\PYG{o}{.}\PYG{n}{getAttribute}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}android:exported\PYGZsq{}}\PYG{p}{)}
+		\PYG{n}{enabled} \PYG{o}{=} \PYG{n}{service}\PYG{o}{.}\PYG{n}{getAttribute}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}android:enabled\PYGZsq{}}\PYG{p}{)}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{exported} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}true\PYGZsq{}} \PYG{o+ow}{and} \PYG{p}{(}\PYG{n}{enabled} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}} \PYG{o+ow}{or} \PYG{n}{enabled} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}true\PYGZsq{}}\PYG{p}{)):}
+			\PYG{n}{exported\PYGZus{}services}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{service}\PYG{p}{)}
+	\PYG{k}{return} \PYG{n}{exported\PYGZus{}services}
+	
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}static\PYGZus{}receivers}\PYG{p}{(}\PYG{n}{xml\PYGZus{}path}\PYG{p}{):}
+	\PYG{n}{exported\PYGZus{}receivers} \PYG{o}{=} \PYG{p}{[]}
+	\PYG{n}{domTree} \PYG{o}{=} \PYG{n}{parse}\PYG{p}{(}\PYG{n}{xml\PYGZus{}path}\PYG{p}{)}
+	\PYG{n}{manifest} \PYG{o}{=} \PYG{n}{domTree}\PYG{o}{.}\PYG{n}{documentElement}
+	\PYG{k}{for} \PYG{n}{receiver} \PYG{o+ow}{in} \PYG{n}{manifest}\PYG{o}{.}\PYG{n}{getElementsByTagName}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}receiver\PYGZsq{}}\PYG{p}{):}
+		\PYG{n}{enabled} \PYG{o}{=} \PYG{n}{receiver}\PYG{o}{.}\PYG{n}{getAttribute}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}android:enabled\PYGZsq{}}\PYG{p}{)}
+		\PYG{k}{if} \PYG{p}{(}\PYG{n}{enabled} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}} \PYG{o+ow}{or} \PYG{n}{enabled} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}true\PYGZsq{}}\PYG{p}{):}
+			\PYG{n}{exported\PYGZus{}receivers}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{receiver}\PYG{p}{)}
+	\PYG{k}{return} \PYG{n}{exported\PYGZus{}receivers}\PYG{p}{;}
+\end{Verbatim}
