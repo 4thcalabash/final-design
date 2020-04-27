@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{NormalReceiver} \PYG{k+kd}{extends} \PYG{n}{BroadcastReceiver} \PYG{p}{\PYGZob{}}
+	\PYG{k+kd}{private} \PYG{k+kd}{static} \PYG{k+kd}{final} \PYG{n}{String} \PYG{n}{TAG} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}NormalReceiver\PYGZdq{}}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{k+kd}{final} \PYG{n}{Random} \PYG{n}{random} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Random}\PYG{p}{();}
+	\PYG{n+nd}{@Override}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{onReceive}\PYG{p}{(}\PYG{n}{Context} \PYG{n}{context}\PYG{p}{,} \PYG{n}{Intent} \PYG{n}{intent}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{n}{Log}\PYG{p}{.}\PYG{n+na}{i}\PYG{p}{(}\PYG{n}{TAG}\PYG{p}{,}\PYG{n}{NormalReceiver}\PYG{p}{.}\PYG{n+na}{this}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{.}\PYG{n+na}{nextInt}\PYG{p}{()} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}.NormalReceiver running \PYGZdq{}}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{NormalService} \PYG{k+kd}{extends} \PYG{n}{Service}\PYG{p}{\PYGZob{}}
+	\PYG{k+kd}{private} \PYG{k+kd}{static} \PYG{k+kd}{final} \PYG{n}{String} \PYG{n}{TAG} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}NormalService\PYGZdq{}}\PYG{p}{;}
+		\PYG{n+nd}{@Override}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{onReceive}\PYG{p}{(}\PYG{n}{Context} \PYG{n}{context}\PYG{p}{,} \PYG{n}{Intent} \PYG{n}{intent}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{n}{Log}\PYG{p}{.}\PYG{n+na}{i}\PYG{p}{(}\PYG{n}{TAG}\PYG{p}{,}\PYG{n}{NormalService}\PYG{p}{.}\PYG{n+na}{this}\PYG{p}{.}\PYG{n+na}{getPackageName}\PYG{p}{()} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}.LeakService running \PYGZdq{}}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

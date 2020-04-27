@@ -18,6 +18,12 @@
 \contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}测试驱动App}{11}{subsection.2.3.2}% 
 \contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}测试主流程}{11}{subsection.2.3.3}% 
 \contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}内存分析器}{13}{subsection.2.3.4}% 
-\contentsline {chapter}{\numberline {3}总结与讨论}{15}{chapter.3}% 
-\contentsline {chapter}{参考文献}{17}{chapter*.4}% 
-\contentsline {chapter}{致\hspace {2em}谢}{19}{chapter*.5}% 
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}实现细节}{14}{subsection.2.3.5}% 
+\contentsline {chapter}{\numberline {3}实验}{17}{chapter.3}% 
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真测试}{17}{section.3.1}% 
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真应用}{17}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验结果}{18}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}真实测试}{18}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}结论}{21}{chapter.4}% 
+\contentsline {chapter}{参考文献}{23}{chapter*.6}% 
+\contentsline {chapter}{致\hspace {2em}谢}{25}{chapter*.7}% 

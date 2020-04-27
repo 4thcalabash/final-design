@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.5.23)  22 APR 2020 19:15
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2019.5.23)  27 APR 2020 17:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1987,15 +1987,13 @@ Underfull \hbox (badness 10000) detected at line 99
 
 ] [1] [2
 
-] (./sample.toc)
+] (./sample.toc [3
+
+])
 \tf@toc=\write6
 \openout6 = `sample.toc'.
 
- [3
-
-] [4
-
-] (./chapter1.tex
+ [4] (./chapter1.tex
 {第\CJKnumber {1}章} 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2034,6 +2032,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removed on input line 18.
 
 [1
+
 
 ]
 
@@ -2585,24 +2584,205 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.00876pt
 (hyperref)                removed on input line 339.
 
-[13]) [14]
+[13]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 399.
+
+) (./chapter3.tex [14] [15] [16
+
+]
 {第\CJKnumber {3}章} 3.
-(./sample.bbl [15
 
-] [16
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 6.
 
-]) [17] [18
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 8.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 8.
+
+\openout3 = `sample.pyg'.
+
+
+(./_minted-sample/403F33B07C3C286C69EFD06C74A4CEDB114E58983A443514B58891AC7FE37
+C92.pygtex)
+\openout3 = `sample.pyg'.
+
+
+(./_minted-sample/FFB612E6629DC14AD89FA8BF2FE9F34B114E58983A443514B58891AC7FE37
+C92.pygtex)
+\openout3 = `sample.pyg'.
+
+
+(./_minted-sample/31AB2B9760F57E085FCF402D0617FDDB114E58983A443514B58891AC7FE37
+C92.pygtex)
+\openout3 = `sample.pyg'.
+
+
+(./_minted-sample/2902F6967AD5DD8B1E4B864596198C975E07088CCB18B0E2343EC8AC37A2E
+4AB.pygtex
+Overfull \hbox (20.75467pt too wide) in paragraph at lines 15--15
+[]\TU/CourierNew(0)/m/n/9.03 android:name=[][]”android.intent.category.LAUNCHER
+”[] 
+ []
+
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 161.
+
+[17]
+File: ./figure/service_leak_result.png Graphic file (type bmp)
+<./figure/service_leak_result.png>
+File: ./figure/receiver_leak_result.png Graphic file (type bmp)
+<./figure/receiver_leak_result.png>
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 177.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 177.
+
+) (./chapter4.tex [18] [19] [20]
+{第\CJKnumber {4}章} 4.
+) (./sample.bbl [21
+
+] [22
+
+]) [23] [24
 
 ] 
 AED: lastpage setting LastPage
-[19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+[25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (./sample.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: 51EFDF51DFE192899B87437C42BC00C4.
+(rerunfilecheck)             Checksum: 6B6DF86B27E802A4EA2A0F0A13500C7F.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2613,15 +2793,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 runsystem(del sample.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 36896 strings out of 492922
- 693093 string characters out of 6136751
- 896703 words of memory out of 5000000
- 40272 multiletter control sequences out of 15000+600000
- 570991 words of font info for 227 fonts, out of 8000000 for 9000
+ 36968 strings out of 492922
+ 696636 string characters out of 6136751
+ 904351 words of memory out of 5000000
+ 40323 multiletter control sequences out of 15000+600000
+ 570999 words of font info for 228 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  54i,12n,81p,2016b,988s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sample.pdf (25 pages).
+Output written on sample.pdf (31 pages).

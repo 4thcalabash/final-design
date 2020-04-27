@@ -60,4 +60,19 @@
   \bibcitedate{[2020-04-21]}\@.
   \newline\url{https://developer.android.com/guide/components/broadcasts}\@.
 
+\bibitem{android-service-limit}
+\bibbooktitle{Android Background Service Limit}\bibmark{[K/OL]}\@.
+  \bibyear{2020} \bibcitedate{[2020-04-27]}\@.
+  \newline\url{https://developer.android.google.cn/about/versions/oreo/background#services}\@.
+
+\bibitem{android-receiver-limit}
+\bibbooktitle{Android Broadcast Receiver Limit}\bibmark{[K/OL]}\@.
+  \bibyear{2020} \bibcitedate{[2020-04-27]}\@.
+  \newline\url{https://developer.android.google.cn/about/versions/oreo/background#broadcasts}\@.
+
+\bibitem{android-receiver-limit-exception}
+\bibbooktitle{Implicit Broadcast Exceptions}\bibmark{[K/OL]}\@. \bibyear{2020}
+  \bibcitedate{[2020-04-27]}\@.
+  \newline\url{https://developer.android.google.cn/guide/components/broadcast-exceptions}\@.
+
 \end{thebibliography}

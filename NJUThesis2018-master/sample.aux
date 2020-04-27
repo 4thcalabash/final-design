@@ -29,6 +29,8 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \FN@pp@footnotehinttrue 
+\citation{android-service-limit}
+\citation{android-service-limit}
 \citation{jun2018lesdroid}
 \citation{jun2018lesdroid}
 \citation{chin2011analyzing}
@@ -111,11 +113,40 @@
 \newlabel{alg:memory analyser:service}{{2.3}{13}{内存分析器：服务分析\relax }{algorithm.2.3}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2.4}{\ignorespaces 内存分析器：服务分析\relax }}{13}{algorithm.2.4}\protected@file@percent }
 \newlabel{alg:memory analyser:receiver}{{2.4}{13}{内存分析器：服务分析\relax }{algorithm.2.4}{}}
+\citation{android-service-limit}
+\citation{android-service-limit}
+\citation{android-receiver-limit}
+\citation{android-receiver-limit}
+\citation{android-receiver-limit-exception}
+\citation{android-receiver-limit-exception}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}3\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}5}实现细节}{14}{subsection.2.3.5}\protected@file@percent }
 \FN@pp@footnotehinttrue 
-\bibdata{sample}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}总结与讨论}{15}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}实验}{17}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chapter_experiment}{{3}{17}{实验}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}1}仿真测试}{17}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}1\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}1}仿真应用}{17}{subsection.3.1.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {7}{\ignorespaces \textbf  {LeakedService}主体代码\relax }}{17}{listing.7}\protected@file@percent }
+\newlabel{code:LeakedService}{{7}{17}{\textbf {LeakedService}主体代码\relax }{listing.7}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {8}{\ignorespaces \textbf  {LeakedReceiver}主体代码\relax }}{18}{listing.8}\protected@file@percent }
+\newlabel{code:LeakedReceiver}{{8}{18}{\textbf {LeakedReceiver}主体代码\relax }{listing.8}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {9}{\ignorespaces \textbf  {NormalReceiver}与\textbf  {NormalService}主体代码\relax }}{18}{listing.9}\protected@file@percent }
+\newlabel{code:Normal}{{9}{18}{\textbf {NormalReceiver}与\textbf {NormalService}主体代码\relax }{listing.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}1\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}2}实验结果}{18}{subsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3\tmspace  +\thinmuskip {.1667em}.\tmspace  +\thinmuskip {.1667em}2}真实测试}{18}{section.3.2}\protected@file@percent }
+\FN@pp@footnotehinttrue 
+\@writefile{lol}{\contentsline {listing}{\numberline {10}{\ignorespaces 仿真应用的AndroidManifest.xml清单\relax }}{19}{listing.10}\protected@file@percent }
+\newlabel{code: manifest}{{10}{19}{仿真应用的AndroidManifest.xml清单\relax }{listing.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{3}\kern .07em\rule  [.5ex]{.4em}{.15ex}\kern .07em{1}}{\ignorespaces 检测到\textbf  {LeakedService}内存泄漏实例\relax }}{20}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:result of mock service}{{{3}\kern .07em\rule  [.5ex]{.4em}{.15ex}\kern .07em{1}}{20}{检测到\textbf {LeakedService}内存泄漏实例\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{3}\kern .07em\rule  [.5ex]{.4em}{.15ex}\kern .07em{2}}{\ignorespaces 检测到\textbf  {LeakedReceiver}内存泄漏实例\relax }}{20}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:result of mock receiver}{{{3}\kern .07em\rule  [.5ex]{.4em}{.15ex}\kern .07em{2}}{20}{检测到\textbf {LeakedReceiver}内存泄漏实例\relax }{figure.caption.5}{}}
+\bibdata{sample}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}结论}{21}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chapter_conclusion}{{4}{21}{结论}{chapter.4}{}}
 \FN@pp@footnotehinttrue 
 \bibcite{jun2018lesdroid}{{1}{}{{}}{{}}}
 \bibcite{chin2011analyzing}{{2}{}{{}}{{}}}
@@ -123,17 +154,20 @@
 \bibcite{mat}{{4}{}{{}}{{}}}
 \bibcite{service}{{5}{}{{}}{{}}}
 \bibcite{broadcast}{{6}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{17}{chapter*.4}\protected@file@percent }
+\bibcite{android-service-limit}{{7}{}{{}}{{}}}
+\bibcite{android-receiver-limit}{{8}{}{{}}{{}}}
+\bibcite{android-receiver-limit-exception}{{9}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{23}{chapter*.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{致\hspace  {2em}谢}{19}{chapter*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{致\hspace  {2em}谢}{25}{chapter*.7}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \FN@pp@footnotehinttrue 
-\newlabel{LastPage}{{}{19}{}{page.19}{}}
-\xdef\lastpage@lastpage{19}
-\xdef\lastpage@lastpageHy{19}
+\newlabel{LastPage}{{}{25}{}{page.25}{}}
+\xdef\lastpage@lastpage{25}
+\xdef\lastpage@lastpageHy{25}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \gdef\minted@oldcachelist{,
   default-pyg-prefix.pygstyle,
@@ -143,4 +177,8 @@
   892ED110E3DE1C803D46B2EF012ED2DD48E655527180F33765C25F0D4F5699DE.pygtex,
   892F0AFF0108D28A37D509F721BA4BE5114E58983A443514B58891AC7FE37C92.pygtex,
   288B5DB286B1AC034FCDCEE1B92A5D3A0400ECA93E0A9D1F5B42ED4109648A9E.pygtex,
-  47B7CAEB9927939CBF12D3290B272A49E2926ECA73BCA93177644C58DBFDA9B0.pygtex}
+  47B7CAEB9927939CBF12D3290B272A49E2926ECA73BCA93177644C58DBFDA9B0.pygtex,
+  403F33B07C3C286C69EFD06C74A4CEDB114E58983A443514B58891AC7FE37C92.pygtex,
+  FFB612E6629DC14AD89FA8BF2FE9F34B114E58983A443514B58891AC7FE37C92.pygtex,
+  31AB2B9760F57E085FCF402D0617FDDB114E58983A443514B58891AC7FE37C92.pygtex,
+  2902F6967AD5DD8B1E4B864596198C975E07088CCB18B0E2343EC8AC37A2E4AB.pygtex}
