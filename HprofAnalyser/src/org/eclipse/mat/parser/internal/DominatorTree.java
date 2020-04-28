@@ -463,9 +463,10 @@ public class DominatorTree
             public void sortByTotalSize(int[] objectIds)
             {
                 int length = objectIds.length;
-
+               // System.out.println("Allocating " + length);
                 // collect the total sizes of the objects
                 long[] totalSizes = new long[length];
+
                 for (int i = 0; i < length; i++)
                 {
                     totalSizes[i] = ts[objectIds[i] + 2];

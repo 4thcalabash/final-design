@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ebe637-b3a3-4723-9993-4c863499d319" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HprofAnalyser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HprofAnalyser/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree$SuccessorsEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree$SuccessorsEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../get_exported_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/../get_exported_services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proc_service.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../proc_service.bat" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,14 +25,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="162" column="17" lean-forward="true" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+            <state relative-caret-position="-148">
+              <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getAllRef#0;class#Main#0" />
                 <element signature="method#getAllFinalizedObjs#0;class#Main#0" />
                 <element signature="method#getAllActiveServices#0;class#Main#0" />
                 <element signature="method#handleObj#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="465" column="17" selection-start-line="465" selection-start-column="17" selection-end-line="465" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/collect/HashMapIntObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="361" column="5" lean-forward="true" selection-start-line="361" selection-start-column="5" selection-end-line="361" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/snapshot/ISnapshot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12738">
+              <caret line="598" column="16" selection-start-line="598" selection-start-column="16" selection-end-line="598" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,6 +128,7 @@
       <find>dump</find>
       <find>weakref</find>
       <find>System</find>
+      <find>A</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,14 +148,15 @@
         <option value="$PROJECT_DIR$/src/Pair.java" />
         <option value="$PROJECT_DIR$/src/PathTreeNode.java" />
         <option value="$PROJECT_DIR$/src/Entry.java" />
+        <option value="$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="480" />
-    <option name="width" value="1449" />
-    <option name="height" value="1039" />
+    <option name="width" value="1450" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -128,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,16 +181,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581838737559" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588063181301" />
     <property name="last_opened_file_path" value="A:/backup/LeakDetector/ResultAnalyser" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -206,16 +242,20 @@
       <workItem from="1581747549708" duration="11326000" />
       <workItem from="1581835125325" duration="3666000" />
       <workItem from="1585563187082" duration="506000" />
+      <workItem from="1588054074819" duration="684000" />
+      <workItem from="1588056405262" duration="1457000" />
+      <workItem from="1588057922891" duration="3837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16466000" />
+    <option name="totallyTimeSpent" value="22444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19705094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20509383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -224,7 +264,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39235127" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3371105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3069307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,7 +274,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.48497853" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.48441926" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -267,13 +307,6 @@
     <entry file="file://$PROJECT_DIR$/src/mat/parser/internal/snapshot/ObjectMarker.java" />
     <entry file="file://$PROJECT_DIR$/src/mat/collect/HashMapIntObject.java" />
     <entry file="file://$PROJECT_DIR$/src/mat/parser/io/PositionInputStream.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/snapshot/ISnapshot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/SnapshotException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -298,13 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/SnapshotFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="192" selection-start-line="192" selection-end-line="192" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/util/MessageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -326,16 +352,19 @@
     <entry file="file://$PROJECT_DIR$/dump_files/temp.hprof" />
     <entry file="file://$PROJECT_DIR$/src/Record.java" />
     <entry file="file://$PROJECT_DIR$/src/Report.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/SnapshotFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="162" column="17" lean-forward="true" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+        <state relative-caret-position="-230">
+          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/snapshot/ISnapshot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12738">
+          <caret line="598" column="16" selection-start-line="598" selection-start-column="16" selection-end-line="598" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getAllRef#0;class#Main#0" />
-            <element signature="method#getAllFinalizedObjs#0;class#Main#0" />
-            <element signature="method#getAllActiveServices#0;class#Main#0" />
-            <element signature="method#handleObj#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -371,6 +400,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/collect/HashMapIntObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="361" column="5" lean-forward="true" selection-start-line="361" selection-start-column="5" selection-end-line="361" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="465" column="17" selection-start-line="465" selection-start-column="17" selection-end-line="465" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getAllRef#0;class#Main#0" />
+            <element signature="method#getAllFinalizedObjs#0;class#Main#0" />
+            <element signature="method#getAllActiveServices#0;class#Main#0" />
+            <element signature="method#handleObj#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>

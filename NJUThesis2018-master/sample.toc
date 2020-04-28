@@ -23,7 +23,12 @@
 \contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真测试}{17}{section.3.1}% 
 \contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真应用}{17}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验结果}{18}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}真实测试}{18}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}结论}{21}{chapter.4}% 
-\contentsline {chapter}{参考文献}{23}{chapter*.6}% 
-\contentsline {chapter}{致\hspace {2em}谢}{25}{chapter*.7}% 
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}真实测试}{19}{section.3.2}% 
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}实验结果}{20}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}应用崩溃主要原因分析}{20}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}结果分析}{21}{section.3.3}% 
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}数据对比}{21}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验数据局限性}{22}{subsection.3.3.2}% 
+\contentsline {chapter}{\numberline {4}结论}{23}{chapter.4}% 
+\contentsline {chapter}{参考文献}{25}{chapter*.9}% 
+\contentsline {chapter}{致\hspace {2em}谢}{27}{chapter*.10}% 

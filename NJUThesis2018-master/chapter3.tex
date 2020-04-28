@@ -175,3 +175,88 @@ public class NormalService extends Service{
 \end{figure}
 
 \section{真实测试}
+
+
+本文选取了\textbf{AppChina 应用市场}\cite{appchina}作为测试应用的来源，在其中选取了各种类别应用中下载量最高的若干应用进行测试。对\textbf{22}个实际应用的测试结果如下：
+
+\subsection{实验结果}\label{now-result}
+\textbf{表现正常 12(54.5\%) }这些应用的组件表现正常，并没有出现内存泄露问题。
+
+\textbf{内存泄漏 3(13.6\%) }这些应用包含了存在内存泄漏问题的组件，并成功被检测工具检测到。
+
+\textbf{应用崩溃 7(31.8\%) }这些应用在测试时抛出了\textbf{ANR(Application Not Response)}异常，导致应用崩溃，无法完成测试。
+
+\subsection{应用崩溃主要原因分析}
+
+\textbf{无法正常启动 } 部分应用在启动时即发生了崩溃，导致应用停止运行。这类应用崩溃的原因可能是因为应用的版本和模拟器系统的版本不兼容，例如使用了不再符合开发规范的接口，某些接口不再支持，或没有在\textbf{AndroidManifest.xml}中声明所需的权限（缺少\textbf{<uses-permission>}标签）等。
+
+\textbf{在测试过程中崩溃 } 部分应用可以正常启动，但是在\textbf{主测试流程}中发生了应用崩溃问题。这类应用崩溃的原因可能是因为应用的组件启动流程存在问题，比如：进行了风险操作，进行了线程不安全操作，没有对启动环境进行检查等；也可能是由于应用的组件确实存在\textbf{内存泄漏}问题，而且泄露表现的十分严重，触发了安卓系统的安全限制，导致安卓系统介入将应用停止运行。
+
+\textbf{空指针异常 } 部分应用的组件在启动时会抛出\textbf{NullPointerException}，该异常表示，在组件的启动过程中，对未实例化的对象进行了读写操作。这类问题大多数是因为组件的开发人员的疏忽，导致的程序缺陷。可能的成因有组件之间使用了共享资源，但是并没有进行专门管理，也有可能是因为这类组件的启动严格遵循\textbf{状态自动机}，但是测试时无法得知组件启动需要满足的前置条件，导致运行出错。
+
+\section{结果分析}
+
+本小节会将本文的测试结果（见\ref{now-result}）与之前的结果\cite{jun2018lesdroid}进行对比，进行分析。
+
+\subsection{数据对比}
+\begin{table}[htb]\footnotesize
+	\centering
+	\caption{不同安卓版本上实验数据对比}
+	\vspace{2mm}
+	% l - left, r - right, c - center. | means one vertical line 这里声明的是表格单元中的内容如何对齐
+	\begin{tabular}{lcccc}
+		\toprule
+		&\textbf{表现正常}&\textbf{内存泄漏}&\textbf{运行异常}&\textbf{泄露正常比}\\
+		\midrule
+		\textbf{安卓6}&63.8\%&13.7\%&22.5\%&0.215\\
+		\hline
+		\textbf{安卓9}&54.5\%&13.6\%&31.8\%&0.250\\
+		\bottomrule
+	\end{tabular}
+	\label{table:compare}
+\end{table}
+
+实验数据的对比表明：
+\begin{itemize}
+	\item 存在内存泄漏的应用比例大致相同，但是表现正常的应用比例有下降，相应的运行异常的应用比例增加。
+	\item 泄露正常比（检测到内存泄漏问题的应用数量与表现正常的应用数量之比）上升，这表明在\textbf{稳定可用的安卓应用}中，内存泄漏问题比早先的版本变得更多了。
+	\item 运行异常的应用比例增加，原因可能是安卓系统版本升级后，将系统权限收紧，导致在旧的安卓版本上可以获取相应权限正常运行的应用，在新版本的安卓系统上无法正常获取到系统权限（可能是系统权限不再可以获取，或者获取权限方式改变等），从而导致应用权限不足，无法正常运行；另外的可能原因是安卓版本升级之后，新增或变更了部分开发规范，导致原有应用的代码在新版本安卓系统上不在兼容（例如新版本不在允许启动后台服务，而需要启动前台服务，并显式获得用户许可等）。
+\end{itemize}
+
+\subsection{实验数据局限性}
+
+由于实验设备和实验环境的限制（参考\textbf{表.}\redbf{\ref{table:pc-compare}}），本文只能使用效率较慢的方式对少量小规模的应用进行串行的测试（参考\textbf{表.}\redbf{\ref{table:method-compare}}）。因此本文得到的实验数据结果具有局限性，说服力较小。
+
+\begin{table}[htb]\footnotesize
+	\centering
+	\caption{工作站配置对比}
+	\vspace{2mm}
+	% l - left, r - right, c - center. | means one vertical line 这里声明的是表格单元中的内容如何对齐
+	\begin{tabular}{lcccc}
+		\toprule
+		&\textbf{操作系统}&\textbf{内存容量}&\textbf{处理器型号}&\textbf{模拟器系统版本}\\
+		\midrule
+		\textbf{LESDroid测试配置\cite{jun2018lesdroid}}&Windows 10&32 GB&Intel Xeon E5-1650&Android 6\\
+		\hline
+		\textbf{本文检测工具的测试配置}&Windows 10&8 GB&Intel(R) Core(TM) i7-8565U&Android 9\\
+		\bottomrule
+	\end{tabular}
+	\label{table:pc-compare}
+\end{table}
+
+\begin{table}[htb]\footnotesize
+	\centering
+	\caption{测试方法对比}
+	\vspace{2mm}
+	% l - left, r - right, c - center. | means one vertical line 这里声明的是表格单元中的内容如何对齐
+	\begin{tabular}{lcccc}
+		\toprule
+		&\textbf{并发能力}&\textbf{模拟器内存}&\textbf{模拟器SD卡容量}&\textbf{测试强度}\\
+		\midrule
+		\textbf{LESDroid测试配置\cite{jun2018lesdroid}}&5线程并发&2 GB&2 GB&每个应用测试3次\\
+		\hline
+		\textbf{本文检测工具的测试配置}&单线程&2 GB&512 MB&每个应用测试2次\\
+		\bottomrule
+	\end{tabular}
+	\label{table:method-compare}
+\end{table}

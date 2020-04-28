@@ -1,3 +1,4 @@
+import com.sun.javafx.collections.ImmutableObservableList;
 import org.eclipse.mat.SnapshotException;
 import org.eclipse.mat.parser.internal.SnapshotFactory;
 import org.eclipse.mat.snapshot.IPathsFromGCRootsComputer;
@@ -8,12 +9,13 @@ import org.eclipse.mat.snapshot.model.NamedReference;
 import org.eclipse.mat.util.ConsoleProgressListener;
 import org.eclipse.mat.util.IProgressListener;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Main {
+    private final Set<String> failed_hprofs = new HashSet<String>(){{
+        add("com.www.zouzoubai.hprof");
+    }};
     class Report{
         String pkgName;
         Set<IObject> leakedObjects = new HashSet<>();
@@ -280,6 +282,8 @@ public class Main {
                 }
             }
         }
+        snapshot.dispose();
+        snapshot = null;
         return report;
     }
 
@@ -302,22 +306,61 @@ public class Main {
     void work(String rootPath) throws SnapshotException {
         int totalApp = 0;
         int leakedApp = 0;
+        int failedApp = 0;
         File rootDir = new File(rootPath);
         System.out.println(rootDir .getAbsolutePath());
         File[] hprofs =rootDir.listFiles();
         for (File app : hprofs){
+            File result = new File(app.getAbsolutePath() + "/result.txt");
+            if (result.exists()){
+                System.out.println("result already exists skipped.");
+                continue;
+            }
             for (File hprof : app.listFiles()){
                 String packageName = hprof.getName();
                 if (packageName.length()< 6 || !packageName.substring(packageName.length()-6).equals(".hprof"))continue;
-                Report report = analyse(hprof);
                 totalApp ++;
-                if (!report.leakedObjects.isEmpty()){
-                    leakedApp ++;
+                System.out.println(packageName);
+               // if (failed_hprofs.contains(packageName)){
+               //     failedApp ++;
+               //     continue;
+               // }
+                try{
+                    Report report = analyse(hprof);
+                    if (!report.leakedObjects.isEmpty()){
+                        leakedApp ++;
+                    }
+                    report.save(new File(app.getAbsolutePath() + "/result.txt"));
+                }catch (Exception e){
+                    failedApp ++;
                 }
-                report.save(new File(app.getAbsolutePath() + "/result.txt"));
             }
         }
-        System.out.println(String.format("\n%d app analysed, %d of which leaks.",totalApp,leakedApp));
+
+        System.out.println(String.format("\n%d app analysed, %d of which leaks, %d of which fails",totalApp,leakedApp,failedApp));
+
+        int N = 0,T = 0,L = 0,F = 0;
+        for (File app: rootDir.listFiles()){
+            File result = new File(app.getAbsolutePath() + "/result.txt");
+            T ++;
+            if (result.exists()){
+                try {
+                    BufferedReader reader = new BufferedReader(new FileReader(result));
+                    String line = reader.readLine();
+                    line = reader.readLine();
+                    if (line.equals("leaked objects count : 0")){
+                        N ++;
+                    }else{
+                        L ++;
+                    }
+                }catch(Exception e){
+                    F ++;
+                }
+            }else{
+                F ++;
+            }
+        }
+        System.out.printf("Total = %d, Normal = %d, Leak = %d, Fail = %d.",T,N,L,F);
     }
     public static void main(String[] args) throws SnapshotException {
         new Main().work(args[0]);

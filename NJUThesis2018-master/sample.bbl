@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\bibauthor}[1]{#1}
 \providecommand{\bibeditor}[1]{#1}
 \providecommand{\bibtranslator}[1]{#1}
@@ -23,6 +23,11 @@
 \providecommand{\bibyear}[1]{#1}
 \providecommand{\bibdate}[1]{#1}
 \providecommand{\biburl}[1]{\newline\url{#1}}
+
+\bibitem{android-service-limit}
+\bibbooktitle{Android Background Service Limit}\bibmark{[K/OL]}\@.
+  \bibyear{2020} \bibcitedate{[2020-04-27]}\@.
+  \newline\url{https://developer.android.google.cn/about/versions/oreo/background#services}\@.
 
 \bibitem{jun2018lesdroid}
 \bibauthor{JUN M\@, SHAOCONG L\@, JIANG Y, et~al}\@. \bibtitle{LESDroid-A Tool
@@ -60,11 +65,6 @@
   \bibcitedate{[2020-04-21]}\@.
   \newline\url{https://developer.android.com/guide/components/broadcasts}\@.
 
-\bibitem{android-service-limit}
-\bibbooktitle{Android Background Service Limit}\bibmark{[K/OL]}\@.
-  \bibyear{2020} \bibcitedate{[2020-04-27]}\@.
-  \newline\url{https://developer.android.google.cn/about/versions/oreo/background#services}\@.
-
 \bibitem{android-receiver-limit}
 \bibbooktitle{Android Broadcast Receiver Limit}\bibmark{[K/OL]}\@.
   \bibyear{2020} \bibcitedate{[2020-04-27]}\@.
@@ -74,5 +74,10 @@
 \bibbooktitle{Implicit Broadcast Exceptions}\bibmark{[K/OL]}\@. \bibyear{2020}
   \bibcitedate{[2020-04-27]}\@.
   \newline\url{https://developer.android.google.cn/guide/components/broadcast-exceptions}\@.
+
+\bibitem{appchina}
+\bibbooktitle{AppChina: An App Market for Chinese Mobile
+  Users}\bibmark{[K/OL]}\@. \bibyear{2020} \bibcitedate{[2020-04-28]}\@.
+  \newline\url{http://www.appchina.com/}\@.
 
 \end{thebibliography}
