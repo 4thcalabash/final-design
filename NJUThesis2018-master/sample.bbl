@@ -60,6 +60,11 @@
   \bibcitedate{[2020-04-20]}\@.
   \newline\url{https://developer.android.com/guide/components/services.html}\@.
 
+\bibitem{androidbroadcastsguide}
+\bibbooktitle{Android Broadcasts Guide}\bibmark{[K/OL]}\@. \bibyear{2020}
+  \bibcitedate{[2020-4-29]}\@.
+  \newline\url{https://developer.android.google.cn/guide/components/broadcasts}\@.
+
 \bibitem{broadcast}
 \bibbooktitle{Android Broadcast Guide}\bibmark{[K/OL]}\@. \bibyear{2020}
   \bibcitedate{[2020-04-21]}\@.

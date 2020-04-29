@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91ebe637-b3a3-4723-9993-4c863499d319" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HprofAnalyser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HprofAnalyser/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree$SuccessorsEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree$SuccessorsEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HprofAnalyser/org/eclipse/mat/parser/internal/DominatorTree$Calculator$FlatDominatorTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/eclipse/mat/parser/internal/DominatorTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proc_service.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../proc_service.bat" afterDir="false" />
-    </list>
+    <list default="true" id="91ebe637-b3a3-4723-9993-4c863499d319" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +14,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
+            <state relative-caret-position="-95">
               <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -187,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588063181301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588063183696" />
     <property name="last_opened_file_path" value="A:/backup/LeakDetector/ResultAnalyser" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -244,16 +233,15 @@
       <workItem from="1585563187082" duration="506000" />
       <workItem from="1588054074819" duration="684000" />
       <workItem from="1588056405262" duration="1457000" />
-      <workItem from="1588057922891" duration="3837000" />
+      <workItem from="1588057922891" duration="4439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22444000" />
+    <option name="totallyTimeSpent" value="23046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20509383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -264,7 +252,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3371105" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3371105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3069307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -419,7 +407,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
+        <state relative-caret-position="-95">
           <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
           <folding>
             <element signature="imports" expanded="true" />
