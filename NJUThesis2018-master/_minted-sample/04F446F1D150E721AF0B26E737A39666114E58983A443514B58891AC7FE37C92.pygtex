@@ -6,11 +6,8 @@
 	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{onReceive}\PYG{p}{(}\PYG{n}{Context} \PYG{n}{context}\PYG{p}{,} \PYG{n}{Intent} \PYG{n}{intent}\PYG{p}{)} \PYG{p}{\PYGZob{}}
 		\PYG{p}{...}
 		\PYG{n}{context}\PYG{p}{.}\PYG{n+na}{startService}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Intent}\PYG{p}{(}\PYG{n}{context}\PYG{p}{,}\PYG{n}{LeakService}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{));}
-		\PYG{k}{new} \PYG{n}{Timer}\PYG{p}{().}\PYG{n+na}{scheduleAtFixedRate}\PYG{p}{(}\PYG{k}{new} \PYG{n}{TimerTask}\PYG{p}{()} \PYG{p}{\PYGZob{}}
-			\PYG{n+nd}{@Override}
-			\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{run}\PYG{p}{()} \PYG{p}{\PYGZob{}}
-				\PYG{n}{Log}\PYG{p}{.}\PYG{n+na}{i}\PYG{p}{(}\PYG{n}{TAG}\PYG{p}{,}\PYG{n}{LeakReceiver}\PYG{p}{.}\PYG{n+na}{this}\PYG{p}{.}\PYG{n+na}{ID} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} is running!\PYGZdq{}}\PYG{p}{);}
-			\PYG{p}{\PYGZcb{}}
+		\PYG{k}{new} \PYG{n}{Timer}\PYG{p}{().}\PYG{n+na}{scheduleAtFixedRate}\PYG{p}{(()}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{p}{\PYGZob{}}
+			\PYG{n}{Log}\PYG{p}{.}\PYG{n+na}{i}\PYG{p}{(}\PYG{n}{TAG}\PYG{p}{,}\PYG{n}{LeakReceiver}\PYG{p}{.}\PYG{n+na}{this}\PYG{p}{.}\PYG{n+na}{ID} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} is running!\PYGZdq{}}\PYG{p}{);}
 		\PYG{p}{\PYGZcb{},} \PYG{l+m+mi}{1000L}\PYG{p}{,} \PYG{l+m+mi}{3000L}\PYG{p}{);}
 	\PYG{p}{\PYGZcb{}}
 \PYG{p}{\PYGZcb{}}
