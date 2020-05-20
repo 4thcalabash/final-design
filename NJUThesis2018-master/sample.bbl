@@ -44,6 +44,12 @@
   \bibyear{2011}\thinspace{}\textnormal{:
   }\bibpages{239\thinspace{}\textnormal{--}\thinspace{}252}\@.
 
+\bibitem{liu2016}
+\bibauthor{刘洁瑞\@, 巫雪青\@, 严俊, et~al}\@. \bibtitle{针对 Android
+  资源泄漏的基准测试集的构造与评测}\bibmark{[J]}\@.
+  \bibjournal{计算机应用}\@, \bibyear{2016}\thinspace{}\textnormal{:
+  }\bibpages{0\thinspace{}\textnormal{--}\thinspace{}0}\@.
+
 \bibitem{apktool}
 \bibauthor{CONNOR~TUMBLESON R~W}\@. \bibbooktitle{A Tool for Reverse
   Engineering Android Apk Files}\bibmark{[K/OL]}\@. \bibyear{2019}
