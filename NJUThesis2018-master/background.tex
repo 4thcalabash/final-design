@@ -119,7 +119,7 @@
 	\end{minted}
 	\label{declaration:service}
 \end{listing}
-通常，每个服务都要在\textbf{AndroidManifest.xml}中注册一个\textbf{<service>}标签（参考Listing.\textcolor{red}{\ref{declaration:service}}中的样例）。同时服务可以通过设置"\textbf{android:exported}"属性来指定该服务是否将被导出。若希望服务可以被其他应用启动，则指定\textbf{android:exported = "true"}，反之亦然。
+通常，每个服务都要在\textbf{AndroidManifest.xml}中注册一个\textbf{<service>}标签（参考Listing.\textcolor{red}{\ref{declaration:service}}中的样例）。同时服务可以通过设置“\textbf{android:exported}”属性来指定该服务是否将被导出。若希望服务可以被其他应用启动，则指定\textbf{android:exported = “true”}，反之亦然。
 %
 %
 %
@@ -237,7 +237,7 @@ public class LeakedService extends Service{
 	\label{declaration:receiver}
 \end{listing}
 
-一般而言，清单声明的广播接收器（见\ref{declaration:receiver in manifest}）需要在\textbf{AndroidManifest.xml}文件中添加\textbf{<receiver>}标签（参考\textbf{Listing.\textcolor{red}{\ref{declaration:receiver}}}），在\textbf{<intent-filter>}子标签中可以指定订阅的广播内容等，也可以通过设置\textbf{"android:exported"}属性来指定该广播是否将被导出。而上下文注册的广播接收器（见\ref{declaration:receiver in context}）则不需要进行前文的操作。
+一般而言，清单声明的广播接收器（见\ref{declaration:receiver in manifest}）需要在\textbf{AndroidManifest.xml}文件中添加\textbf{<receiver>}标签（参考\textbf{Listing.\textcolor{red}{\ref{declaration:receiver}}}），在\textbf{<intent-filter>}子标签中可以指定订阅的广播内容等，也可以通过设置\textbf{“android:exported”}属性来指定该广播是否将被导出。而上下文注册的广播接收器（见\ref{declaration:receiver in context}）则不需要进行前文的操作。
 \subsection{广播接收器的内存泄漏}
 广播接收器的内存泄漏原理类似与服务内存泄漏\ref{service_leak}。但是由广播接收器引起的内存泄漏往往比服务更为严重，因为广播接收器被系统认为只进行不耗时的操作（如果超过10s未从\textbf{onReceive()}方法中返回，将抛出\textbf{ANR(Application Not Response)异常}），因此通常广播接收器在接到广播后，很有可能会启动其他的\textbf{Service}进行后续的耗时操作，进而可能会导致一连串的内存泄漏。
 
@@ -270,8 +270,85 @@ public class LeakReceiver extends BroadcastReceiver {
 	\label{leaked example:receiver}
 \end{listing}
 
+\section{电池管理限制}
+
+本节将对电池管理限制进行介绍，同时为了理解电池管理限制的具体生效方式，将对安卓启动服务的源码进行追溯，找到办法绕过电池管理限制。
+
+\subsection{简介}
+
+在安卓9的更新中，引入了\textbf{电池管理}\cite{histroyofpms}来改善安卓设备的电池使用情况，这项更新是先前版本若干相关更新的集成和拓展，目的是帮助节约电量消耗，使得安卓设备的续航得到改善。
+
+其主要限制有两种：
+
+\textbf{应用待机群组} 系统会根据用户使用应用的时间和频率，将应用分成\textbf{活跃}、\textbf{工作集}、\textbf{常用}、\textbf{极少使用}、\textbf{从未使用}五个群组。系统会根据应用所处的群组，来限制应用的行为：例如限制网络连接能力，设定资源分配优先级等。
+\newline
+
+\textbf{省电模式改进} 省电模式是在安卓9之前的版本中就已经存在的功能，在安卓9中继续晚上扩展了这一功能：如禁止所有后台应用启动服务和使用网络访问服务等。
+
+\subsection{绕过电池管理限制方法}
+
+首先，启动服务时，需要调用\textbf{startService()}（见图.\redbf{\ref{fig:source code:startService}}） 或者 \textbf{bindService()}（见图.\redbf{\ref{fig:source code:bindService}}）  之一API，当调用这两个API时，会进入安卓源码的\textbf{ContextImpl.java}类对应的方法中，可以发现这两个API会分别继续调用\textbf{startServiceCommon()} 和\textbf{bindServiceCommon()} API，于是进一步阅读这两个方法。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ContextImpl-startService.png} % requires the graphicx package
+	\caption{调用startService() API}
+	\label{fig:source code:startService}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ContextImpl-bindService.png} % requires the graphicx package
+	\caption{调用bindService() API}
+	\label{fig:source code:bindService}
+\end{figure}
+
+通过阅读\textbf{startServiceCommon()}（见图.\redbf{\ref{fig:source code:startServiceCommon}}） 和 \textbf{bindServiceCommon()}（见图.\redbf{\ref{fig:source code:bindServiceCommon}}）发现了当尝试进行后台启动服务时会抛出的异常信息：\redbf{Not allowed to start service ...}，从而确定对后台启动服务的限制具体是由\textbf{AMS}来负责处理，继续阅读\textbf{AMS}代码可以发现，具体的判定逻辑位于\textbf{ActiveServices.java}（见图.\redbf{\ref{fig:source code:getAppStartModeLocked}}）以及\textbf{ActivityManagerService.java}（见图.\redbf{\ref{fig:source code:appRestrictedInBackgroundLocked}}）两个类中。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ContextImpl-startServiceCommon.png} % requires the graphicx package
+	\caption{startServiceCommon() API}
+	\label{fig:source code:startServiceCommon}
+\end{figure}
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ContextImpl-bindServiceCommon.png} % requires the graphicx package
+	\caption{bindServiceCommon() API}
+	\label{fig:source code:bindServiceCommon}
+\end{figure}
+
+在\textbf{ActiveServices.java}（见图.\redbf{\ref{fig:source code:getAppStartModeLocked}}）的\textbf{startServiceLocked()}方法的第\textbf{494}行调用了\textbf{ActivityManagerService.java}（见图.\redbf{\ref{fig:source code:appRestrictedInBackgroundLocked}}）的\textbf{getAppStartModeLocked()}方法，在该方法的第\textbf{5955}行的注释发现，安卓会维护一个\textbf{应用白名单}，\textbf{在白名单中的应用将会突破“电池管理限制”所限制的后台启动应用限制}。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ActiveServices-startServiceLocked.png} % requires the graphicx package
+	\caption{getAppStartModeLocked()方法}
+	\label{fig:source code:getAppStartModeLocked}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{ActivityManagerService-appRestrictedInBackgroundLocked.png} % requires the graphicx package
+	\caption{appRestrictedInBackgroundLocked()方法}
+	\label{fig:source code:appRestrictedInBackgroundLocked}
+\end{figure}
+
+同时经过大量的尝试和探索，在安卓的系统设置中，发现了此白名单的添加方式：\textbf{系统设置 - 应用和通知 - 特殊应用权限 - 电池优化}（见图.\redbf{\ref{fig:hack-battery}}）。经过实验，将应用添加至此白名单中，确实可以突破“电池管理限制”，在后台进行服务的启动。在本文后续的测试过程中，所有的应用都将会添加至此白名单中。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{hack_battery.png} % requires the graphicx package
+	\caption{电池优化白名单添加方式}
+	\label{fig:hack-battery}
+\end{figure}
+
 \section{小结}
 
 本章首先介绍了安卓系统的发展历史，以及安卓应用的四大主要组件，意在说明不可见控件在安卓应用中的重要作用。
 
 接下来重点说明了两类不可见组件（服务和广播）的注册、启动方式，及其生命周期，然后举例说明了组件产生内存泄漏的原因，以及内存泄漏将会导致的严重后果。为后文的检测提供依据。
+
+最后通过追溯安卓源码理解了电池管理的具体限制方式，并通过白名单方式绕过了电池管理限制，使得应用可以从后台启动服务。

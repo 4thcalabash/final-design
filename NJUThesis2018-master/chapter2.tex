@@ -91,7 +91,7 @@ def get_static_receivers(xml_path):
 	\label{python:get services}	
 \end{listing}
 
-接下来使用\textbf{python}中的\textbf{xml} 库解析此xml文件（详见\textbf{Listing.}\redbf{\ref{python:get services}}），筛选出所有指定\textbf{android:exported = "true"} 以及 \textbf{android:enabled = "true"}（或者不指定，默认值为"true"）的服务，以及在清单中声明的广播接收器。将这些控件的包名，类名，以及所需的权限等信息写入\textbf{测试配置}中
+接下来使用\textbf{python}中的\textbf{xml} 库解析此xml文件（详见\textbf{Listing.}\redbf{\ref{python:get services}}），筛选出所有指定\textbf{android:exported = “true”} 以及 \textbf{android:enabled = “true”}（或者不指定，默认值为“true”）的服务，以及在清单中声明的广播接收器。将这些控件的包名，类名，以及所需的权限等信息写入\textbf{测试配置}中
 \section{测试驱动App}\label{test driver app}
 测试驱动App负责控制所有安卓模拟器上的测试行为（即测试主流程\redbf{\ref{main flow}}）。首先驱动会读取\textbf{测试配置}，获得要测试的服务和广播接收器，之后进行\textbf{测试主流程}，在完成测试流程之后，使用\textbf{Socket}与\textbf{工作站}进行通信，通知\textbf{工作站}测试任务已经完成，导出被测试应用的堆镜像文件进行最后的分析。
 \section{测试主流程}\label{main flow}

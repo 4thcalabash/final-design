@@ -4,7 +4,7 @@
 
 首先将会设计仿真测试，在仿真测试中，会设计轻量级的、最简单的仿真应用，以验证自动检测工具是否能够正确检测出内存泄漏的组件，同时不出现误检的行为。
 
-接下来为了测试新的安卓版本中“电池管理策略”带来的变化，将会从安卓应用市场中下载真实的应用，使用本工具进行测试，将测试数据与前人测试数据对比，得出结论。
+接下来为了测试新的安卓版本中“电池管理限制”带来的变化，将会从安卓应用市场中下载真实的应用，使用本工具进行测试，将测试数据与前人测试数据对比，得出结论。
 \section{仿真测试}
 
 \subsection{仿真应用}
@@ -200,7 +200,7 @@ public class NormalService extends Service{
 
 本小节会将本文的测试结果（见\ref{now-result}）与之前的结果\cite{jun2018lesdroid}进行对比，进行分析。
 
-\subsection{数据对比}
+\subsection{数据分析}
 \begin{table}[htb]\footnotesize
 	\centering
 	\caption{不同安卓版本上实验数据对比}
@@ -227,7 +227,7 @@ public class NormalService extends Service{
 
 \subsection{实验数据局限性}
 
-由于实验设备和实验环境的限制（参考\textbf{表.}\redbf{\ref{table:pc-compare}}），本文只能使用效率较慢的方式对少量小规模的应用进行串行的测试（参考\textbf{表.}\redbf{\ref{table:method-compare}}）。因此本文得到的实验数据结果具有局限性，说服力较小。
+由于实验设备和实验环境的限制（参考\textbf{表.}\redbf{\ref{table:pc-compare}}），本文只能使用效率较慢的方式对少量小规模的应用进行串行的测试（参考\textbf{表.}\redbf{\ref{table:method-compare}}）。同时，测试选取的数据集有较大不同，因此本文得到的实验数据结果具有局限性，说服力较小。
 \newline
 
 \begin{table}[htb]\footnotesize
