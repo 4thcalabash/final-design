@@ -1,52 +1,52 @@
-\contentsline {chapter}{目\hspace {2em}录}{III}{chapter*.1}% 
-\contentsline {chapter}{\numberline {1}绪论}{1}{chapter.1}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}研究背景}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}相关工作}{2}{section.1.2}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}主要挑战}{2}{section.1.3}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}现有研究的不足}{3}{section.1.4}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}本文贡献}{3}{section.1.5}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}6}本文主要工作}{3}{section.1.6}% 
-\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}7}本文结构}{3}{section.1.7}% 
-\contentsline {chapter}{\numberline {2}背景}{5}{chapter.2}% 
-\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}安卓系统}{5}{section.2.1}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}发展历史}{5}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}主要组件}{5}{subsection.2.1.2}% 
-\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}安卓服务}{6}{section.2.2}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}服务的启动方式}{8}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}服务的生命周期}{8}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}服务的注册方式}{8}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}服务的内存泄漏}{9}{subsection.2.2.4}% 
-\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}安卓广播接收器}{10}{section.2.3}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}广播接收器的启动方式}{11}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}广播接收器的生命周期}{11}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}广播接收器的注册方式}{11}{subsection.2.3.3}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}广播接收器的内存泄漏}{12}{subsection.2.3.4}% 
-\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}电池管理限制}{13}{section.2.4}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}简介}{13}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}对实验方法的影响}{14}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}电池管理限制白名单}{14}{subsection.2.4.3}% 
-\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}小结}{17}{section.2.5}% 
-\contentsline {chapter}{\numberline {3}技术方案}{19}{chapter.3}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}系统架构}{19}{section.3.1}% 
-\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}基于测试效率的考量}{19}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}具体设计}{20}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}Apk 文件解析器}{20}{section.3.2}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}测试驱动应用}{21}{section.3.3}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}测试主流程}{22}{section.3.4}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}内存分析器}{23}{section.3.5}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}6}其他实现细节}{24}{section.3.6}% 
-\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}7}小结}{25}{section.3.7}% 
-\contentsline {chapter}{\numberline {4}实验}{27}{chapter.4}% 
-\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真测试}{27}{section.4.1}% 
-\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真应用}{27}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验结果}{27}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}真实测试}{28}{section.4.2}% 
-\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}实验结果}{29}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}应用崩溃主要原因分析}{30}{subsection.4.2.2}% 
-\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}结果分析}{31}{section.4.3}% 
-\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}数据分析}{31}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验数据局限性}{32}{subsection.4.3.2}% 
-\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}小结}{32}{section.4.4}% 
-\contentsline {chapter}{\numberline {5}结论}{33}{chapter.5}% 
-\contentsline {chapter}{参考文献}{35}{chapter*.16}% 
-\contentsline {chapter}{致\hspace {2em}谢}{37}{chapter*.17}% 
+\contentsline {chapter}{目\hspace {2em}录}{III}{chapter*.1}
+\contentsline {chapter}{\numberline {1}绪论}{1}{chapter.1}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}研究背景}{1}{section.1.1}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}相关工作}{2}{section.1.2}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}主要挑战}{2}{section.1.3}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}现有研究的不足}{3}{section.1.4}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}本文贡献}{3}{section.1.5}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}6}本文主要工作}{3}{section.1.6}
+\contentsline {section}{\numberline {1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}7}本文结构}{3}{section.1.7}
+\contentsline {chapter}{\numberline {2}背景}{5}{chapter.2}
+\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}安卓系统}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}发展历史}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}主要组件}{5}{subsection.2.1.2}
+\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}安卓服务}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}服务的启动方式}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}服务的生命周期}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}服务的注册方式}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}服务的内存泄漏}{9}{subsection.2.2.4}
+\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}安卓广播接收器}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}广播接收器的启动方式}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}广播接收器的生命周期}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}广播接收器的注册方式}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}广播接收器的内存泄漏}{11}{subsection.2.3.4}
+\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}电池管理限制}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}简介}{12}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}对实验方法的影响}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}电池管理限制白名单}{13}{subsection.2.4.3}
+\contentsline {section}{\numberline {2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}小结}{16}{section.2.5}
+\contentsline {chapter}{\numberline {3}技术方案}{17}{chapter.3}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}系统架构}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}基于测试效率的考量}{17}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}具体设计}{18}{subsection.3.1.2}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}Apk 文件解析器}{18}{section.3.2}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}测试驱动应用}{19}{section.3.3}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}测试主流程}{20}{section.3.4}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}5}内存分析器}{21}{section.3.5}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}6}其他实现细节}{22}{section.3.6}
+\contentsline {section}{\numberline {3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}7}小结}{23}{section.3.7}
+\contentsline {chapter}{\numberline {4}实验}{24}{chapter.4}
+\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真测试}{24}{section.4.1}
+\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}仿真应用}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验结果}{24}{subsection.4.1.2}
+\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}真实测试}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}实验结果}{26}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}应用崩溃主要原因分析}{27}{subsection.4.2.2}
+\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3}结果分析}{27}{section.4.3}
+\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}1}数据分析}{27}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}3\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}2}实验数据局限性}{28}{subsection.4.3.2}
+\contentsline {section}{\numberline {4\tmspace +\thinmuskip {.1667em}.\tmspace +\thinmuskip {.1667em}4}小结}{28}{section.4.4}
+\contentsline {chapter}{\numberline {5}结论}{29}{chapter.5}
+\contentsline {chapter}{参考文献}{30}{chapter*.16}
+\contentsline {chapter}{致\hspace {2em}谢}{32}{chapter*.17}

@@ -73,62 +73,10 @@
 每个安卓应用都关联一个\textbf{ActivityThread}实例，负责调度和执行该应用的各种组件。\textbf{ActivityThread}有一个\textbf{ArrayMap}类型的成员变量\textbf{mServices}，其中保存了所有仍在运行的服务的引用。一旦某个服务的实例停止运行，其引用将会从\textbf{mServices}中删除，之后该实例会被\textbf{GC}回收。
 
 \subsection{服务的注册方式}
-\begin{listing}[htbp]
-	\centering
-	\caption{服务的注册方式}
-	\begin{minted}[encoding=utf8,
-	frame=single,
-	framesep = 1em,
-	numbers=left, 
-	breaklines=true, 
-	tabsize=4,
-	xleftmargin=2em,xrightmargin=2em,
-	fontsize=\footnotesize]{xml}
-<manifest
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:dist="http://schemas.android.com/apk/distribution"
-	package="com.example.myapplication">
-	<dist:module dist:instant="true" />
-	<application ...>
-		...
-		<service android:name=".Service1"
-			android:enabled="true"
-			android:exported="true">
-		</service>
-		<service
-			android:name = ".Service2"
-			android:enabled = "true"
-			android:exported = "false">
-			<intent-filter>
-				<category android:name = "cat1"/>
-				<action android:name = "act2"/>
-			</intent-filter>
-		</service>
-		<service android:name = ".Service3"
-			android:enabled = "true"
-			android:permission = "Permission1">
-			<intent-filter>
-				<action android:name = "act3"/>
-				<category android:name = "cat2"/>
-				<data android:scheme = "Scheme1"/>
-				<data android:scheme = "Scheme2"/>
-			</intent-filter>
-		</service>
-	</application>
-</manifest>
-	\end{minted}
-	\label{declaration:service}
-\end{listing}
-通常，每个服务都要在\textbf{AndroidManifest.xml}中注册一个\textbf{<service>}标签（参考Listing.\textcolor{red}{\ref{declaration:service}}中的样例）。同时服务可以通过设置“\textbf{android:exported}”属性来指定该服务是否将被导出。若希望服务可以被其他应用启动，则指定\textbf{android:exported = “true”}，反之亦然。
-%
-%
-%
-%
-%可以凑更多字数
-%
-%
-%
-%
+
+通常，每个服务都要在\textbf{AndroidManifest.xml}中注册一个\textbf{<service>}标签。同时服务可以通过设置“\textbf{android:exported}”属性来指定该服务是否将被导出。若希望服务可以被其他应用启动，则指定\textbf{android:exported = “true”}，反之亦然。
+
+同时，服务可以进行指定很多其他的属性或者子标签，以对服务进行定制化的设计，或者对服务设定权限等。例如\textbf{<intent-filter>}子标签可以指定服务对哪些动作进行响应。
 \subsection{服务的内存泄漏}\label{service_leak}
 通常，一个服务的实例不再被使用时应该被\textbf{GC(Garbage Collector)}回收，并释放资源。然而在某些情况下，一个停止运行的服务可能会意外的被引用，从而使得\textbf{GC}无法将其回收并释放资源，这样就造成了服务的内存泄漏。
 \begin{listing}[htbp]
@@ -197,47 +145,8 @@ public class LeakedService extends Service{
 \end{figure}
 
 \subsection{广播接收器的注册方式}
-\begin{listing}[htbp]
-	\centering
-	\caption{广播接收器的注册方式}
-	\begin{minted}[encoding=utf8,
-	frame=single,
-	framesep = 1em,
-	numbers=left, 
-	breaklines=true, 
-	tabsize=4,
-	showtabs = false,
-	xleftmargin=2em,xrightmargin=2em,
-	fontsize=\footnotesize]{XML}
-<manifest 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:dist="http://schemas.android.com/apk/distribution"
-	package="com.example.myapplication">
-	<dist:module dist:instant="true" />
-	<application ...>
-		...
-		<receiver
-			android:name = ".Receiver1">
-			<intent-filter>
-				<action android:name = "act1" />
-			</intent-filter>
-		</receiver>
-		<receiver
-			android:name = ".Receiver2"
-			android:exported = "false"
-			android:enabled = "true">
-			<intent-filter>
-				<category android:name = "cat1" />
-				<action android:name = "act2" />
-			</intent-filter>
-		</receiver>
-	</application>
-</manifest>
-	\end{minted}
-	\label{declaration:receiver}
-\end{listing}
 
-一般而言，清单声明的广播接收器（见\ref{declaration:receiver in manifest}）需要在\textbf{AndroidManifest.xml}文件中添加\textbf{<receiver>}标签（参考\textbf{Listing.\textcolor{red}{\ref{declaration:receiver}}}），在\textbf{<intent-filter>}子标签中可以指定订阅的广播类型，也可以通过设置\textbf{“android:exported”}属性来指定该广播是否将被导出。而上下文注册的广播接收器（见\ref{declaration:receiver in context}）则不需要进行这样的操作。
+一般而言，清单声明的广播接收器（见\ref{declaration:receiver in manifest}）需要在\textbf{AndroidManifest.xml}文件中添加\textbf{<receiver>}标签，在\textbf{<intent-filter>}子标签中可以指定订阅的广播类型，也可以通过设置\textbf{“android:exported”}属性来指定该广播是否将被导出。而上下文注册的广播接收器（见\ref{declaration:receiver in context}）则不需要进行这样的操作。
 \subsection{广播接收器的内存泄漏}
 广播接收器的内存泄漏原理类似于服务内存泄漏（见\ref{service_leak}小节）。但是由广播接收器引起的内存泄漏往往比服务更为严重，因为广播接收器被被设计成只进行不耗时的操作（如果超过10s未从\textbf{onReceive()}方法中返回，将抛出\textbf{ANR(Application Not Response)异常}），因此通常广播接收器在接到广播后，会启动其他的\textbf{Service}进行后续的耗时操作。因此如果在广播接收器中产生了内存泄漏，可能会使他启动的服务也同时泄露，进而导致更严重的后果。
 
